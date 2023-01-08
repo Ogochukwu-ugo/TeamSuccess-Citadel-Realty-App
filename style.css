@@ -8,6 +8,7 @@
 
 body {
     background-color:  hsla(193, 53%, 97%, 1);
+    overflow-x: hidden;
 }
 
 /* Navigation Section */
@@ -138,8 +139,8 @@ li > .nav-link  {
 
 .hero-content >h1 {
     font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 3.5rem;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
     margin-top: 1rem;
     color: hsla(0, 0%, 20%, 1);
 }
@@ -158,12 +159,12 @@ li > .nav-link  {
 }
 
 .hero-services {
-    margin-top: -2.5rem;
+    margin-top: -1.2rem;
     background-color: transparent;
 }
 
 .hero-services li  {
-    width: 7rem;
+    /* width: 7rem; */
     margin: 0;
     text-align: center;
     border: none;
@@ -172,29 +173,92 @@ li > .nav-link  {
 }
 
 .hero-services li a {
+    font-size: .7rem;
     color: hsla(0, 0%, 100%, 1);
 }
 
 .tab-content {
-    height: 6.2rem;
+    height: 13.5rem;
+    width: 100%;
+    margin-top: -1.0rem;
+    padding-top: 1.1rem;
     background: hsla(223, 65%, 44%, 1);
+}
+
+#location {
+    width: 13rem ;
+    height: 2rem;
+    margin: 0.3rem 0.8rem;
+    padding: 0rem 2rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: hsla(0, 0%, 0%, 0.6);
+    border: none;
+    background-color: hsla(193, 53%, 97%, 1);
+}
+
+#house, #price {
+    border: none;
+    width: 13rem ;
+    height: 2rem;
+    margin: 0.3rem 0.8rem;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: hsla(0, 0%, 0%, 0.6);
+    background-color: hsla(193, 53%, 97%, 1);
+}
+
+.service-detail input[type="button"]{
+    width: 8rem ;
+    height: 2rem;
+    margin: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: hsla(0, 0%, 40%, 1);
+    border: none;
+    background-color: hsla(193, 53%, 97%, 1);
 }
 
 .service-detail {
     display: flex;
-    flex: content;
-    padding: 1rem 1.5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.location img {
+    position: absolute;
+    margin-top: .8rem;
+    margin-left: 1.2rem;
+    height: 1rem;
 }
 
 /* Blog Section */
 
 .blog {
-    margin-top: 2rem;
+    margin-top: 12rem;
     padding: 4rem 2.5rem;
     background-color: hsla(193, 53%, 97%, 1);
 }
 
+.blogBtn {
+    width: 8rem;
+    height: 3rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: auto 4rem;
+    margin-top: .8rem;
+    text-align: center;
+    border: none;
+    background-color: hsla(50, 100%, 55%, 1);
+    color: hsla(0, 0%, 0%, 1);
+}
+
 .blog-column {
+    margin-top:  1rem;
+    margin-bottom: 1rem;
     background-color: hsla(0, 0%, 100%, 1);
     border-radius: 0rem 0.6rem;
 }
@@ -216,6 +280,7 @@ li > .nav-link  {
 .blog-column1-right article  h4 {
     font-size: 1.5rem;
     font-weight: 700;
+    text-align: left;
     color: hsla(0, 0%, 20%, 1);
 }
 
@@ -228,13 +293,21 @@ li > .nav-link  {
 .blog-column article p,
 .blog-column1-right article p {
     font-size: .6rem;
-    font-weight: 500;
+    font-weight: 400;
     margin-top: .4rem;
+    text-align: left;
     color: hsla(0, 0%, 20%, 1);
+}
+
+.blog-link {
+    font-weight: 500;
+    color: hsla(248, 84%, 50%, 1);
 }
 
 .blog-column1-right {
     display: flex;
+    flex-direction: column;
+    margin: 0.8rem 0rem;
     background-color: hsla(0, 0%, 100%, 1);
 }
 
@@ -249,10 +322,12 @@ li > .nav-link  {
     background-color: hsla(0, 0%, 100%, 1);
 }
 
-.agents h3 {
-    font-size: 2.5rem;
+.agents h3,
+.blog h3 {
+    font-size: 1.8rem;
     font-weight: 700;
     padding: 1rem .6rem;
+    text-align: left;
     color: hsla(0, 0%, 20%, 1);
 }
 
@@ -293,13 +368,13 @@ li > .nav-link  {
 
 /* Owner Section */
 .owner-section {
-    margin-top: 5rem;
+    margin-top: 2rem;
     height: 8rem;
     text-align: center;
 }
 
 .owner-section h3 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: 700;
     text-transform: capitalize;
     color: hsla(0, 0%, 20%, 1);
@@ -310,7 +385,7 @@ li > .nav-link  {
 }
 
 .owner-section p {
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 500;
     margin-top: 1.5rem;
     color: hsla(0, 0%, 20%, 1);
@@ -347,14 +422,14 @@ li > .nav-link  {
 
 footer {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 5.5rem;
     padding: 1.5rem 3rem;
     background-color: hsla(223, 65%, 44%, 1);
 }
 
 .footer-row {
     margin: auto;
-    padding: 2rem 12rem;
+    padding: 2rem 5.2rem;
 }
 
 .footer-column {
@@ -396,6 +471,106 @@ footer {
 }
 
 
+@media only screen and (min-width: 425px) {
+    .tab-content {
+        height: 13.5rem;
+        width: 100%;
+        margin-top: -1.0rem;
+        padding-top: 1.1rem;
+        background: hsla(223, 65%, 44%, 1);
+    }
+
+    .blog {
+        margin-top: 16rem;
+        padding: 4rem 2.5rem;
+        background-color: hsla(193, 53%, 97%, 1);
+    }
+
+    .blogBtn {
+        margin: auto 7rem;
+        margin-top: 1.4rem;
+    }
+
+    .footer-row {
+        margin: auto;
+        padding: 2rem 7.2rem;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .service-detail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 0;
+    }
+    .hero-services {
+        margin-top: -2rem;
+        background-color: transparent;
+    }
+    .tab-content {
+        height: 6.2rem;
+        width: 85%;
+        margin-top: -.25rem;
+        padding-top: 1.1rem;
+        background: hsla(223, 65%, 44%, 1);
+    }
+
+    .location img {
+        position: absolute;
+        margin-top: .5rem;
+        margin-left: .5rem;
+        height: 1rem;
+    }
+
+    #location {
+        width: 10rem ;
+        height: 2rem;
+        margin: 0rem 0.1rem;
+        padding: 0rem 2rem;
+        font-size: 0.7rem;
+        font-weight: 400;
+        color: hsla(0, 0%, 0%, 0.6);
+        border: none;
+        background-color: hsla(193, 53%, 97%, 1);
+    }
+    
+    #house, #price {
+        border: none;
+        width: 10rem ;
+        height: 2rem;
+        margin: 0rem 0.1rem;
+        font-size: 0.6rem;
+        font-weight: 400;
+        color: hsla(0, 0%, 0%, 0.6);
+        background-color: hsla(193, 53%, 97%, 1);
+    }
+    
+    .service-detail input[type="button"]{
+        width: 7rem ;
+        height: 2rem;
+        margin: 0rem 0.1rem;
+        font-size: 0.7rem;
+        padding: 0rem .2rem;
+        font-weight: 700;
+        color: hsla(0, 0%, 40%, 1);
+        border: none;
+        background-color: hsla(193, 53%, 97%, 1);
+    }
+    .blog {
+        margin-top: -1rem;
+        padding: 4rem 2.5rem;
+        background-color: hsla(193, 53%, 97%, 1);
+    }
+
+    .blogBtn {
+        margin: auto 20rem;
+        margin-top: 1.5rem;
+    }
+}
+
 @media only screen and (min-width:1024px) {
     .navLinkContainer {
         justify-content: space-between;
@@ -436,29 +611,222 @@ footer {
         line-height: 2rem;
         color: hsla(0, 0%, 20%, 1);
     }
+    
+    .hero-services li  {
+        width: 7rem;
+        margin: 0;
+        text-align: center;
+        border: none;
+        border-radius: 0rem;
+        background: hsla(223, 65%, 44%, 1);
+    }
+    
+    .hero-services li a {
+        font-size: 1rem;
+        color: hsla(0, 0%, 100%, 1);
+    }
 
     .hero-services {
         margin-top: -2.7rem;
+        background-color: transparent;
     }
+
+    .hero-services li  {
+        width: 7rem;
+        margin: 0;
+        text-align: center;
+        border: none;
+        border-radius: 0rem;
+        background: hsla(223, 65%, 44%, 1);
+    }
+
 
     .tab-content {
+        height: 6.2rem;
         width: 85%;
+        margin-top: -.25rem;
+        padding-top: 1.1rem;
+        background: hsla(223, 65%, 44%, 1);
     }
 
+    .service-detail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 0;
+    }
 
+    .location img {
+        position: absolute;
+        margin-top: .5rem;
+        margin-left: 1.2rem;
+        height: 1rem;
+    }
+
+    #location {
+        width: 15rem ;
+        height: 2rem;
+        margin: 0rem 0.8rem;
+        padding: 0rem 2rem;
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: hsla(0, 0%, 0%, 0.6);
+        border: none;
+        background-color: hsla(193, 53%, 97%, 1);
+    }
+    
+    #house, #price {
+        border: none;
+        width: 15rem ;
+        height: 2rem;
+        margin: 0rem 0.8rem;
+        font-size: 0.7rem;
+        font-weight: 400;
+        color: hsla(0, 0%, 0%, 0.6);
+        background-color: hsla(193, 53%, 97%, 1);
+    }
+    
+    .service-detail input[type="button"]{
+        width: 8rem ;
+        height: 2rem;
+        margin: 0rem 0.8rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: hsla(0, 0%, 40%, 1);
+        border: none;
+        background-color: hsla(193, 53%, 97%, 1);
+    }
+
+    .blog {
+        margin-top: 2rem;
+        padding: 4rem 2.5rem;
+        background-color: hsla(193, 53%, 97%, 1);
+    }
+
+    .blog-column1-right {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;
+        background-color: hsla(0, 0%, 100%, 1);
+    }
+
+    .blogBtn {
+        margin: auto 35rem;
+        margin-top: 1.4rem;
+    }
 
     .agents-row,
     .blog-row {
-        margin: 0 0.7rem;
+        margin: 0 0.6rem;
     }
 
-    .agents h3 {
+    .agents h3,
+    .blog h3 {
         font-size: 2.5rem;
         padding: 1rem 2.5rem;
     }
     
     .agents-column {
         width: 22rem;
-        margin: 0 1.2rem;
+        margin: 0 1.1rem;
     }
+
+    .owner-section {
+        margin-top: 5rem;
+        height: 8rem;
+        text-align: center;
+    }
+    
+    .owner-section h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: hsla(0, 0%, 20%, 1);
+    }
+
+    .owner-section p {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: 1.5rem;
+        color: hsla(0, 0%, 20%, 1);
+    }
+    
+    .owner-section > form {
+        margin-top: 1.5rem;
+    }
+    
+    .owner-section form input[type="email"] {
+        width: 18rem ;
+        height: 3rem;
+        padding-left: 0.8rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        background-color: hsla(0, 0%, 100%, 1);
+        color: hsla(0, 0%, 0%, 0.6);
+        border: none;
+    }
+    
+    .owner-section form input[type="button"] {
+        width: 8rem;
+        height: 3rem;
+        font-size: 0.9rem;
+        font-weight: 700;
+        margin-left: -0.2rem;
+        border: none;
+        background-color: hsla(50, 100%, 55%, 1);
+        color: hsla(0, 0%, 0%, 1);
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 5rem;
+        padding: 1.5rem 3rem;
+        background-color: hsla(223, 65%, 44%, 1);
+    }
+    
+    .footer-row {
+        margin: auto;
+        padding: 2rem 12rem;
+    }
+    
+    .footer-column {
+        text-align: left;
+    }
+    
+    .footer-column h5 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-top: .5rem;
+        text-align: left;
+        color: hsla(0, 0%, 100%, 1);
+    }
+    
+    .footer-column > ul li {
+        list-style: none;
+        text-align: left;
+        margin-left: -2rem;
+        margin-top: 1rem;
+    }
+    
+    .footer-column > ul li a {
+        text-decoration: none;
+        font-size: 0.7rem;
+        font-weight: 500;
+        color: hsla(0, 0%, 100%, 1);
+    }
+    
+    .footer-column  .social-media img {
+        height: 1.3rem;
+        margin-right: 0.5rem;
+    }
+    
+    .copyright {
+        font-size: 0.6rem;
+        font-weight: 600;
+    
+        color: hsla(0, 0%, 100%, 1);
+    }
+    
 }

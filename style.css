@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body {
+    background-color:  hsla(193, 53%, 97%, 1);
+}
+
+.navbar-toggler {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+
+.menu {
+    padding: 0.5rem 1.2rem;
+}
+
+.logo {
+    height: 2.6rem;
+}
+
+.logo1 {
+    height: 2rem;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: .15rem;
+    width: 100%;
+    background: hsl(214, 100%, 36%);
+    border-radius: 0.6rem;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition:  .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0rem;
+}
+
+/* when navigation is clicked*/
+
+
+.navbar-toggler .top-bar {
+    margin-top: 0rem;
+    transform:  rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity:  0;
+    filter:  alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top:  0rem;
+    transform:  rotate(-135deg);
+}
+
+/* State when the navbar is collapsed*/
+
+.navbar-toggler.collapsed .top-bar {
+    margin-top:  -0.5rem;
+    transform:  rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter:  alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    margin-top:  0.5rem;
+    transform:  rotate(0deg);
+}
+
+.offcanvas {
+    margin-top: 0rem !important;
+    background-color: hsla(0, 0%, 100%, 1);
+    
+}
+
+#navbar-content {
+    margin-top: 3.1rem;
+    width: 40%;
+    height: 80%;
+}
+
+.navLinkContainer {
+    justify-content: space-between;
+}
+
+li > .nav-link  {
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 800;
+    color: hsla(0, 0%, 20%, 1);
+}
+
+
+.navBtn {
+    width: 120px;
+    background: hsla(50, 100%, 55%, 1);
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.hero-section {
+    padding: 0rem 3rem;
+    height: 100vh;
+}
+
+.hero-row {
+    margin-top: 5rem;
+}
+
+.hero-content >h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-top: 1rem;
+    color: hsla(0, 0%, 20%, 1);
+}
+
+.hero-content  p {
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: hsla(0, 0%, 20%, 1);
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.hero-services {
+    margin-top: -2.5rem;
+    background-color: transparent;
+}
+
+.hero-services li  {
+    width: 7rem;
+    margin: 0;
+    text-align: center;
+    border: none;
+    border-radius: 0rem;
+    background: hsla(223, 65%, 44%, 1);
+}
+
+.hero-services li a {
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.tab-content {
+    height: 6.2rem;
+    background: hsla(223, 65%, 44%, 1);
+}
+
+.service-detail {
+    display: flex;
+    flex: content;
+    padding: 1rem 1.5rem;
+}
+
+.agents {
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2.5rem;
+    margin-top: 2rem;
+    background-color: hsla(0, 0%, 100%, 1);
+}
+
+.agents h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 1rem .6rem;
+    color: hsla(0, 0%, 20%, 1);
+}
+
+.agents-row {
+    margin-left: 0;
+}
+
+.agents-column {
+    margin: 0 ;
+}
+
+/* .agents-column> article {
+    margin-top: 1.5rem;
+} */
+
+.agents-column article h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    color: hsla(0, 0%, 0%, 1);
+}
+
+.agents-column article span {
+    font-size: .7rem;
+    font-weight: 500;
+    color: hsla(0, 0%, 0%, 0.6);
+}
+
+.agents-column article p {
+    font-size: .9rem;
+    font-weight: 500;
+    color: hsla(0, 0%, 0%, 1);
+}
+
+.agents-column > article picture img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.owner-section {
+    margin-top: 5rem;
+    height: 8rem;
+    text-align: center;
+}
+
+.owner-section h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: hsla(0, 0%, 20%, 1);
+}
+
+.owner-section h3 span {
+    border: 0.1rem solid hsla(0, 0%, 20%, 1);
+}
+
+.owner-section p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    color: hsla(0, 0%, 20%, 1);
+}
+
+.owner-section > form {
+    margin-top: 1.5rem;
+}
+
+.owner-section form input[type="email"] {
+    width: 18rem ;
+    height: 3rem;
+    padding-left: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: hsla(0, 0%, 100%, 1);
+    color: hsla(0, 0%, 0%, 0.6);
+    border: none;
+}
+
+.owner-section form input[type="button"] {
+    width: 8rem;
+    height: 3rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-left: -0.2rem;
+    border: none;
+    background-color: hsla(50, 100%, 55%, 1);
+    color: hsla(0, 0%, 0%, 1);
+}
+
+footer {
+    text-align: center;
+    margin-top: 5rem;
+    padding: 1.5rem 3rem;
+    background-color: hsla(223, 65%, 44%, 1);
+}
+
+.footer-row {
+    margin: auto;
+    padding: 2rem 12rem;
+}
+
+.footer-column {
+    text-align: left;
+}
+
+.footer-column h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: .5rem;
+    text-align: left;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.footer-column > ul li {
+    list-style: none;
+    text-align: left;
+    margin-left: -2rem;
+    margin-top: 1rem;
+}
+
+.footer-column > ul li a {
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.footer-column  .social-media img {
+    height: 1.3rem;
+    margin-right: 0.5rem;
+}
+
+.copyright {
+    font-size: 0.6rem;
+    font-weight: 600;
+
+    color: hsla(0, 0%, 100%, 1);
+}
+
+
+@media only screen and (min-width:1024px) {
+    .navLinkContainer {
+        justify-content: space-between;
+        margin-left: 15rem;
+    }
+
+    #navbar-content {
+        margin-top: 3.1rem;
+        width: 0;
+        height: 0;
+    }
+
+    .nav-item {
+        margin: 0 1rem;
+    }
+
+    .navBtn {
+        margin-top: 0;
+        margin-right: .8rem;
+    }
+
+    .hero-row {
+        margin-top: 10rem;
+    }
+
+    .hero-content >h1 {
+        width: 90%;
+        font-weight: 700;
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+        color: hsla(0, 0%, 20%, 1);
+    }
+
+    .hero-content  p {
+        width: 70%;
+        margin: 2.5rem 0;
+        font-size: 1rem;
+        line-height: 2rem;
+        color: hsla(0, 0%, 20%, 1);
+    }
+
+    .hero-services {
+        margin-top: -2.7rem;
+    }
+
+    .tab-content {
+        width: 85%;
+    }
+
+
+
+    .agents-row {
+        margin-left: 0.7rem;
+    }
+
+    .agents h3 {
+        font-size: 2.5rem;
+        padding: 1rem 2.5rem;
+    }
+    
+    .agents-column {
+        width: 22rem;
+        margin: 0 1.3rem;
+    }
+}

@@ -10,6 +10,8 @@ body {
     background-color:  hsla(193, 53%, 97%, 1);
 }
 
+/* Navigation Section */
+
 .navbar-toggler {
     width: 15px;
     height: 15px;
@@ -123,6 +125,8 @@ li > .nav-link  {
     font-weight: 800;
 }
 
+/* Hero Section */
+
 .hero-section {
     padding: 0rem 3rem;
     height: 100vh;
@@ -182,6 +186,61 @@ li > .nav-link  {
     padding: 1rem 1.5rem;
 }
 
+/* Blog Section */
+
+.blog {
+    margin-top: 2rem;
+    padding: 4rem 2.5rem;
+    background-color: hsla(193, 53%, 97%, 1);
+}
+
+.blog-column {
+    background-color: hsla(0, 0%, 100%, 1);
+    border-radius: 0rem 0.6rem;
+}
+
+
+.blog-column picture img,
+.blog-column1-right picture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.blog-column article,
+.blog-column1-right article{
+    padding: 1.3rem 0.8rem;
+}
+
+.blog-column article h4,
+.blog-column1-right article  h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsla(0, 0%, 20%, 1);
+}
+
+.blog-column article span,
+.blog-column1-right article span {
+    font-size: .8rem;
+    font-weight: 600;
+    color: hsla(0, 0%, 20%, 1);
+}
+.blog-column article p,
+.blog-column1-right article p {
+    font-size: .6rem;
+    font-weight: 500;
+    margin-top: .4rem;
+    color: hsla(0, 0%, 20%, 1);
+}
+
+.blog-column1-right {
+    display: flex;
+    background-color: hsla(0, 0%, 100%, 1);
+}
+
+
+/* Agents Section */
+
 .agents {
     justify-content: center;
     align-items: center;
@@ -197,7 +256,8 @@ li > .nav-link  {
     color: hsla(0, 0%, 20%, 1);
 }
 
-.agents-row {
+.agents-row,
+.blog-row {
     margin-left: 0;
 }
 
@@ -205,9 +265,6 @@ li > .nav-link  {
     margin: 0 ;
 }
 
-/* .agents-column> article {
-    margin-top: 1.5rem;
-} */
 
 .agents-column article h5 {
     font-size: 1.5rem;
@@ -234,7 +291,7 @@ li > .nav-link  {
     object-fit: contain;
 }
 
-
+/* Owner Section */
 .owner-section {
     margin-top: 5rem;
     height: 8rem;
@@ -284,6 +341,9 @@ li > .nav-link  {
     background-color: hsla(50, 100%, 55%, 1);
     color: hsla(0, 0%, 0%, 1);
 }
+
+
+/* Footer Section */
 
 footer {
     text-align: center;
@@ -387,8 +447,9 @@ footer {
 
 
 
-    .agents-row {
-        margin-left: 0.7rem;
+    .agents-row,
+    .blog-row {
+        margin: 0 0.7rem;
     }
 
     .agents h3 {
@@ -398,6 +459,6 @@ footer {
     
     .agents-column {
         width: 22rem;
-        margin: 0 1.3rem;
+        margin: 0 1.2rem;
     }
 }

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Rowdies&display=swap');
+body {
+     background-color: white;
+     font-size: 5.8rem;
+     font-family: 'Rowdies', cursive;
+
+
+     color: #2b3e51;
+   }
+   
+   h2 {
+     font-weight: 300;
+     text-align: center;
+     color: #2851BA;
+   }
+   
+   div {
+     position: relative;
+   }
+   
+   a,
+   a:link,
+   a:visited,
+   a:active {
+     color: #3ca9e2;
+     -webkit-transition: all 0.2s ease;
+     transition: all 0.2s ease;
+   }
+   a:focus, a:hover,
+   a:link:focus,
+   a:link:hover,
+   a:visited:focus,
+   a:visited:hover,
+   a:active:focus,
+   a:active:hover {
+     color: #329dd5;
+     -webkit-transition: all 0.2s ease;
+     transition: all 0.2s ease;
+   }
+   
+   #login-form-wrap {
+     background-color: #fff;
+     width: 35%;
+     margin: 30px auto;
+     text-align: center;
+     padding: 20px 0 0 0;
+     border-radius: 4px;
+     box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
+   }
+   
+   #login-form {
+     padding: 0 30px;
+   }
+   
+   div .Input {
+    line-height: 100px;
+   }
+   input {
+     display: block;
+     box-sizing: border-box;
+     width: 100%;
+     outline: none;
+     height: 40px;
+     line-height: 40px;
+     border-radius: 4px;
+   }
+   
+   input[type="email"],
+   input[type="text"] {
+     width: 100%;
+     padding: 0 0 0 10px;
+     margin: 0;
+     color: #1841bc;
+     border: 1px solid #d8d8de;
+     font-style: normal;
+     font-size: 16px;
+     -webkit-appearance: none;
+        -moz-appearance: none;
+             appearance: none;
+     position: relative;
+     display: inline-block;
+     background: #F2F9FB;
+     
+   }
+   input[type="text"]:focus,
+   input[type="email"]:focus {
+     border-color: #3ca9e2;
+   }
+   input[type="text"]:focus:invalid,
+   input[type="email"]:focus:invalid {
+     color: #cc1e2b;
+     border-color: #cc1e2b;
+   }
+   
+   
+   
+   .validation {
+     display: none;
+     position: absolute;
+     content: " ";
+     height: 60px;
+     width: 30px;
+     right: 15px;
+     top: 0px;
+   }
+   
+   input[type="submit"] {
+     border: none;
+     display: block;
+     background-color: #2851BA;
+     color: #fff;
+     font-weight: bold;
+     text-transform:none;
+     cursor: pointer;
+     -webkit-transition: all 0.2s ease;
+     transition: all 0.2s ease;
+     font-size: 18px;
+     position: relative;
+     display: inline-block;
+     text-align: center;
+   }
+   input[type="submit"]:hover {
+     background-color: #6281be;
+     -webkit-transition: all 0.2s ease;
+     transition: all 0.2s ease;
+   }
+   
+   #create-account-wrap {
+     background-color: #F2F9FB;
+     color: #8a8b8e;
+     font-size: 14px;
+     width: 100%;
+     padding: 10px 0;
+     border-radius: 0 0 4px 4px;
+     text-decoration: none;
+   }
+   #create-account-wrap span {
+    color: #FFDA1A;
+    text-decoration:none;
+   }
+   .forgot {
+    font-family: 'Montserrat';
+    color: #2851BA;
+    display: inline-block;
+    float: right;
+    font: 12px/1 sans-serif;
+    left: -19px;
+    position: relative;
+    text-decoration: none;
+    top: 5px;
+    transition: color .4s;
+    cursor: pointer;
+  }
+  .forgot:hover { color: #3b3b3b }

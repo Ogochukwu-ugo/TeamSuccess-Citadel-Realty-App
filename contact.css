@@ -1,148 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Rowdies&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+
 body {
-    padding-top: 10vh;
-    font-family: 'Rowdies', cursive;
-
+  background-color: hsla(0, 0%, 100%, 1);
 }
-header {
-     display: flex;
-     justify-content: flex-end;
-     align-items: center;
-     margin: 0.5rem 1.5rem;
-   }
-   
-   a,
-   button {
-     color: white;
-   }
-   
-   .logo {
-     margin-right: auto;
-   }
-   
-   .logo {
-     height: 2.2rem;
-     margin-right: 100px;
-   }
-   .nav-links {
-     list-style: none;
 
-   }
-   
-   .nav-links li {
-     display: inline-block;
-     padding: 0 1.25rem;
-
-   }
-   
-   .nav-links li a {
-     color: black;
-     text-decoration: none;
-     font-family: 'Rowdies', cursive;
-     font-size: 0.5rem;
-     transition: all 0.5s ease 0s;
-   }
-   
-   .nav-links li a:hover {
-     color: rgba(46, 85, 163, 0.8);
-   }
-   
-   .sign-up {
-     background: #2851BA;
-     color: #fff;
-     cursor: pointer;
-     padding: 9px 20px;
-     border: none;
-     border-radius: 1px;
-     font-family: 'Rowdies', cursive;
-     font-size: .5rem;
-     transition: all 0.5s ease 0s;
-     margin-left: 20px;
-  }
-
-  .sign-up:hover {
-  background:#2851BA;
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0rem 2rem;
+  width: 600px;
+  margin-top: 5rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-family: Montserrat;
 }
+   
+main > h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: hsla(223, 65%, 44%, 1);
+} 
+
+main > p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: hsla(0, 0%, 40%, 1);
+  text-align: center;
+}
+
+form {
+  margin: .3rem;
+  margin-top: 1.5rem;
+}
+
+form > input[type="email"],
+            [type="text"],
+  form> textarea,
+ #send 
+{
+  width: 100%;
+  margin: .5rem;
+  font-size: 1rem;
+  font-weight: 800;
+  border: none;
+  background: hsla(0, 0%, 90%, 1);
+  padding: 1rem .8rem;
+}
+
+#send {
+  font-size: 1.2rem;
+  font-weight: 800;
+  background: hsla(193, 53%, 97%, 1);
+  color: hsla(223, 65%, 44%, 1);
+}
+
+#signUp {
+  color: hsla(0, 0%, 100%, 1);
+  background-color: hsla(223, 65%, 44%, 1);
+}
+   
   
-
- 
-
-
-
-.container {
-    border: 1px solid rgb(236, 236, 241);   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    font-family: 'Rowdies', cursive;
-    width: 60vw;
-    padding: 17px ;
-}
-
-h2 {
-    color:#2851BA;
-    font-size: 25px;
-}
-
-p {
- font-family: 'Poppins', sans-serif;
-
-}
-/* .contact-info {
-    display: block;
-    width: 90%;
-} */
-
-input {
-    margin: 10px 15px;
-    height: 35px;
-    width: 100%;
-    padding: 2px 2px 2px 2px;
-    background: #E5E5E5;
-    font-family: 'Rowdies', cursive;
-
-
-}
-
-
-
-textarea {
-    height: 150px;
-    margin: 10px 15px;
-    background: #E5E5E5;
-    width: 100%;
-    font-family: 'Rowdies', cursive;
-
-
-}
-
-button {
-    margin: 10px 10px 10px 10px;
-    width:100%;
-    background: #F2F9FB;
-    padding: 20px 10px;
-    border: 0;
-    border-radius: 5px;
-    color:#2851BA;
-    font-size: 15px;
-    cursor: pointer;
-    align-self: center;
-    font-family: 'Rowdies', cursive;
-
-}
-
-button:hover {
-    color: rgb(63, 59, 59);
-}
-
 @media screen and (max-width:780px) {
-    .contact-info {
-        flex-direction: column;
+    main{
         width: 90%;
+        margin-top: 10rem;
+    }
+
+    form {
+      margin: 0rem;
+      margin-top: 1.5rem;
     }
     
-   
+   main > p {
+    font-size: .9rem;
+   }
+
+   form > input[type="email"],
+            [type="text"],
+  form> textarea
+ {
+  font-size: .8rem ;
+ }
 }
 
 

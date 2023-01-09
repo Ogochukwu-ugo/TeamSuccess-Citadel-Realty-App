@@ -117,6 +117,12 @@ li > .nav-link  {
     color: hsla(0, 0%, 20%, 1);
 }
 
+.nav-link[aria-current="page"],
+.nav-item:hover{
+    text-decoration: underline solid hsl(214, 100%, 36%) 0.2rem !important;
+    text-underline-offset: 0.6rem;
+}
+
 
 .navBtn {
     width: 120px;
@@ -235,10 +241,109 @@ li > .nav-link  {
     height: 1rem;
 }
 
+/* Our Service Section */
+.services {
+    background-color: hsla(0, 0%, 100%, 1);
+}
+
+.service-column1-right{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border-radius: .4rem ;
+    padding: 1rem;
+    background-color: hsla(193, 53%, 97%, 1);
+}
+
+.service-column-right {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: .4rem ;
+    margin: .9rem 0rem;
+    background-color: hsla(193, 53%, 97%, 1);
+}
+
+.service-icon img {
+    height: 6rem;
+    margin-top: .6rem;
+}
+
+.service-home {
+    width: 100%;
+    padding: 1rem .7rem;
+}
+
+.service-home h5 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.service-home p {
+    font-size:.7rem;
+    font-weight: 500;
+}
+
+/* Projects Section  */
+
+.projects,
+.services  {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 2.5rem;
+    margin-top: 4rem;
+}
+
+.projects h3,
+.services h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.project-column {
+    margin-top:  1rem;
+    margin-bottom: 1rem;
+}
+
+
+.project-column-right,
+.project-column-left {
+    margin: 1rem 0rem;
+}
+
+/* Featured Section */
+
+.features {
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2.5rem;
+    margin-top: 10rem;
+    background-color: hsla(0, 0%, 100%, 1);
+}
+
+.rent-image figcaption,
+.project-sect figcaption {
+    position: absolute;
+    width: 9rem;
+    height: 3rem;
+    margin-top: -3rem;
+    padding: 1rem .3rem ;
+    border-bottom-left-radius: .4rem;
+    font-size: .8rem;
+    font-weight: 700;
+    color: hsla(0, 0%, 100%, 1);
+    background-color: hsla(223, 65%, 44%, 1);
+}
+
 /* Blog Section */
 
 .blog {
-    margin-top: 12rem;
+    margin-top: 1rem;
     padding: 4rem 2.5rem;
     background-color: hsla(193, 53%, 97%, 1);
 }
@@ -323,7 +428,8 @@ li > .nav-link  {
 }
 
 .agents h3,
-.blog h3 {
+.blog h3,
+.features h3 {
     font-size: 1.8rem;
     font-weight: 700;
     padding: 1rem .6rem;
@@ -332,38 +438,50 @@ li > .nav-link  {
 }
 
 .agents-row,
-.blog-row {
+.blog-row,
+.lower-feat-images,
+.upper-feat-images,
+.project-row,
+.service-row {
     margin-left: 0;
 }
 
-.agents-column {
+.agents-column,
+.upper-image {
     margin: 0 ;
 }
 
 
-.agents-column article h5 {
+.agents-column article h5,
+.apartment {
     font-size: 1.5rem;
     font-weight: 500;
     margin-top: 1.5rem;
     color: hsla(0, 0%, 0%, 1);
 }
 
-.agents-column article span {
+.agents-column article span,
+.feat-location {
     font-size: .7rem;
     font-weight: 500;
     color: hsla(0, 0%, 0%, 0.6);
 }
 
-.agents-column article p {
+.agents-column article p,
+.feat-house-type {
     font-size: .9rem;
     font-weight: 500;
     color: hsla(0, 0%, 0%, 1);
 }
 
-.agents-column > article picture img {
+.agents-column > article picture img,
+.rent-image img,
+.project-sect img,
+.service-column > figure img,
+.details-img > figure img {
     width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 /* Owner Section */
@@ -384,7 +502,8 @@ li > .nav-link  {
     border: 0.1rem solid hsla(0, 0%, 20%, 1);
 }
 
-.owner-section p {
+.owner-section p,
+.projects p {
     font-size: .8rem;
     font-weight: 500;
     margin-top: 1.5rem;
@@ -699,6 +818,53 @@ footer {
         background-color: hsla(193, 53%, 97%, 1);
     }
 
+
+    .service-column1-right{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+        border-radius: .4rem ;
+        padding: 1rem;
+        background-color: hsla(193, 53%, 97%, 1);
+    }
+    
+    .service-column-right {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+        padding: 1rem;
+        border-radius: .4rem ;
+        margin: .9rem 0rem;
+        background-color: hsla(193, 53%, 97%, 1);
+    }
+
+    .service-home h5 {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    
+    .service-home p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .service-home {
+        width: 90%;
+        padding: 1.5rem 1rem;
+    }
+    
+    .projects,
+    .services,
+    .details  {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 4rem 2.5rem;
+        margin-top: 6rem;
+    }
+
     .blog {
         margin-top: 2rem;
         padding: 4rem 2.5rem;
@@ -718,14 +884,34 @@ footer {
     }
 
     .agents-row,
-    .blog-row {
+    .blog-row,
+    .lower-feat-images,
+    .upper-feat-images,
+    .project-row,
+    .details-row {
         margin: 0 0.6rem;
     }
 
     .agents h3,
-    .blog h3 {
+    .blog h3,
+    .features h3 {
         font-size: 2.5rem;
         padding: 1rem 2.5rem;
+    }
+
+    .projects h3 {
+        font-size: 2.5rem;
+        padding: 1rem 2.5rem;
+        text-align: center;
+    }
+
+    .upper-image {
+        width: 16.1rem;
+        margin: 0rem 1rem;
+    }
+
+    .upper-image article {
+        margin-top: -.5rem;
     }
     
     .agents-column {
@@ -746,7 +932,8 @@ footer {
         color: hsla(0, 0%, 20%, 1);
     }
 
-    .owner-section p {
+    .owner-section p,
+    .projects p {
         font-size: 1rem;
         font-weight: 500;
         margin-top: 1.5rem;

@@ -10,10 +10,13 @@ The Citadel Realty App is a Real Estate Web Application that aims to alleviate t
 The app will address these issues by allowing people to search for homes without wasting time, effort, or money. It will allow them to view homes in various areas that meet their needs, preferences, and budget.
 
 #### The Building Process
-
+In building the web app, I and my teammate used several tools for building. The building process was really a wild quest just as the name implies. Although we were always rushing to meet up the deadline, we still tried to make the app to look close to the design we received from the product designer.
 
 ### Built With
-
+-HTML
+-CSS
+-Bootstrap
+-Firebase
 ### Screenshots
 
 

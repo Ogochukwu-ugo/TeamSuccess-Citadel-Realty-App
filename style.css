@@ -768,6 +768,18 @@ footer {
         background: hsla(223, 65%, 44%, 1);
     }
 
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .carousel-control-next,
+    .carousel-control-previous {
+        height: 2rem;
+        color: hsla(0, 0%, 20%, 1);
+    }
+
     .service-detail {
         display: flex;
         flex-direction: row;

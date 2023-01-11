@@ -448,7 +448,7 @@ li > .nav-link  {
 
 .agents-column,
 .upper-image {
-    margin: 0 ;
+    margin: 0rem .1rem ;
 }
 
 
@@ -918,8 +918,8 @@ footer {
     }
 
     .upper-image {
-        width: 16.1rem;
-        margin: 0rem 1rem;
+        width: 16rem;
+        margin: 0rem .9rem;
     }
 
     .upper-image article {

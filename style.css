@@ -918,8 +918,9 @@ footer {
     }
 
     .upper-image {
-        width: 15rem;
-        margin: 0rem .7rem;
+        feature-temp
+        width: 16rem;
+        margin: 0rem .9rem;
     }
 
     .upper-image article {

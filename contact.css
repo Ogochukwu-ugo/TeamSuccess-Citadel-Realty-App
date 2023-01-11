@@ -2,6 +2,7 @@
 
 body {
   background-color: hsla(0, 0%, 100%, 1);
+  overflow-x: hidden;
 }
 
 main {
@@ -16,7 +17,8 @@ main {
   font-family: Montserrat;
 }
    
-main > h2 {
+main > h2,
+main > h1 {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
@@ -35,15 +37,18 @@ form {
   margin-top: 1.5rem;
 }
 
-form > input[type="email"],
+form > input [type="email"],
             [type="text"],
-  form> textarea,
- #send 
+            [type="email"],
+            [type="password"],
+form> textarea,
+#send ,
+.formbtn
 {
   width: 100%;
   margin: .5rem;
   font-size: 1rem;
-  font-weight: 800;
+  font-weight: 600;
   border: none;
   background: hsla(0, 0%, 90%, 1);
   padding: 1rem .8rem;
@@ -59,6 +64,111 @@ form > input[type="email"],
 #signUp {
   color: hsla(0, 0%, 100%, 1);
   background-color: hsla(223, 65%, 44%, 1);
+}
+
+/* Register Css Section */
+
+/* .reg-wrapper {
+  top: 35%;
+} */
+
+.fullname,
+.formBtns {
+ display: flex;
+ flex-direction: row;
+}
+
+.log-link {
+  width: 100%;
+  margin: .8rem;
+  margin-top: 4rem;
+  font-size: .9rem;
+  color: hsla(0, 0%, 40%, 1);
+  font-weight: 800;
+  border: none;
+  background: hsla(193, 53%, 97%, 1);
+  padding: 1.4rem;
+}
+
+.log-link a {
+  text-decoration: none;
+  color: hsla(50, 100%, 55%, 1);
+  margin-left: 1rem;
+  font-weight: 700;
+}
+
+.formBtns .col {
+  /* position: absolute; */
+  margin: auto 0.4rem;
+  font-size: .7rem;
+  padding: 1rem .8rem;
+  font-weight: 800;
+  width: 12rem;
+  margin-top: 3rem;
+  color: hsla(223, 65%, 44%, 1);
+  background-color: hsla(0, 0%, 90%, 1);
+}
+
+#terms {
+  position: absolute;
+  width: 60%;
+  margin: auto -11rem;
+  margin-top: -.5rem;
+  text-align: center;
+  font-size: .8rem;
+  font-weight: 600;
+  color: hsla(223, 65%, 44%, 1);
+}
+
+main > h1 {
+  margin-right: 1rem;
+  text-align: left;
+}
+
+.phone span {
+  position: absolute;
+  font-size: .6rem;
+  margin-top: -.5rem;
+}
+
+#code {
+  margin-left: -2rem;
+}
+
+.formbtn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  color: hsla(0, 0%, 100%, 1);
+  background-color: hsla(223, 65%, 44%, 1);
+}
+
+#firstName,
+#lastName,
+#email,
+#pswd,
+#confpwd,
+#tel
+{
+  background: hsla(193, 53%, 97%, 1);
+  font-size: .6rem;
+}
+
+#areaCode {
+  font-size: .6rem;
+}
+
+.logbtn {
+  margin-top: 5rem;
+}
+
+#Forgot {
+  position: absolute;
+  font-size: .7rem;
+  font-weight: 600;
+  margin-top: -.5rem;
+  margin-left: 26rem; 
+  color: hsla(223, 65%, 44%, 1);
 }
    
   
@@ -83,6 +193,54 @@ form > input[type="email"],
  {
   font-size: .8rem ;
  }
+
+ .reg-wrapper {
+  top: 50%;
+  width:250px;
+  margin: auto;
+  margin-top: 16rem;
+}
+
+#terms{
+  font-size: .6rem;
+  width: 75%;
+  margin: auto -7rem ;
+}
+
+ .fullname,
+.formBtns {
+ display: flex;
+ flex-direction: column;
+}
+
+.log-link {
+  font-size: .6rem;
+}
+
+.formBtns .col {
+  margin: .3rem 2rem;
+}
+
+.formbtn {
+  font-size: 1rem;
+}
+
+#terms {
+  margin: auto -7rem;
+}
+
+.logbtn {
+  margin-top: 5rem;
+}
+
+#Forgot {
+  position: absolute;
+  font-size: .7rem;
+  font-weight: 600;
+  margin-top: -.5rem;
+  margin-left: 7rem; 
+  color: hsla(223, 65%, 44%, 1);
+}
 }
 
 

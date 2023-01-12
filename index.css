@@ -1,0 +1,210 @@
+.why {
+    background-color: hsla(223, 54%, 22%, 1);
+}
+#why-head {
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    text-align: left;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.why-column-details {
+    text-align: left;
+    padding: .6rem 1rem;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.line,
+.why-column-details .line {
+    width: 13rem;
+    height: .1rem;
+    margin-left: 3rem;
+    background: hsla(0, 0%, 0%, 1);
+}
+
+.why-column-details .line  {
+    margin-left: .5rem;
+    margin-top: 1rem;
+}
+
+.why-column-details span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* .land-blog {
+    margin-top: -12rem;
+} */
+
+.teams > picture img {
+    width: 8rem;
+    height: auto;
+    margin: auto 5rem;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.team-column-right h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 1);
+    margin: 2rem 0rem;
+}
+
+.team-column-left {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.teams > .teams-detail {
+   margin: auto -8rem;
+   text-align: center;
+}
+
+.teams-detail h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: .5rem;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.teams-detail span {
+    font-size: .9rem;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.land-own {
+    margin: auto;
+}
+
+.team {
+    margin: auto;
+    margin-top: 1rem;
+    background-color: hsla(223, 54%, 22%, 1);
+}
+
+.land-foot {
+    margin: auto;
+    margin-top: 5.5rem;
+}
+
+
+
+
+@media only screen and (min-width:1024px) {
+    .logbtn  {
+        margin-right: 4rem;
+    }
+
+    .land-hero {
+        margin: auto 1.5rem;
+        margin-top: -5rem;
+        
+    }
+
+    .land-hero-service {
+        margin: auto 11rem;
+        margin-top: 7rem;
+    }
+
+    .land-hero-image {
+        margin-top: 2rem;
+    }
+
+    .land-hero-service-tab {
+        margin-left: 11rem;
+        margin-top: 7rem;
+    }
+
+    .land-service,
+    .land-latest,
+    .why,
+    .land-blog,
+    .team {
+        margin: auto 1.5rem;
+    }
+
+    .land-latest,
+   .land-latest .late-row {
+        margin-top: -3rem;
+    }
+
+    .latest {
+        margin-top: 2rem;
+    }
+
+    
+
+    .why {
+        background: hsla(223, 54%, 22%, 100);
+
+    }
+
+    #why-head {
+        color: hsla(0, 0%, 100%, 1);
+        font-size: 2.5rem;
+        font-weight: 700;
+        padding: 1rem 2.5rem;
+        text-align: left;
+    }
+
+    .teams > .teams-detail {
+        margin: .5rem 1rem;
+        text-align: center;
+     }
+
+     .teams > picture img {
+        width: 8rem;
+        height: auto;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+
+    .why-column-details span {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .why-column-details h5 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: .5rem 0rem;
+    }
+
+    .why-column-details article {
+        font-size: .8rem;
+        font-weight: 400;
+    }
+
+    .team {
+        background: hsla(223, 54%, 22%, 1);
+
+    }
+
+    .team-column-left {
+        display: flex;
+        flex-direction: row;
+        margin: 1.5rem  3rem;
+    }
+
+    .teams {
+        margin: 1rem  3rem;
+    }
+
+    
+
+    .team-column-right {
+        margin: 4rem 1rem;
+    }
+
+    .team-column-right h4 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: hsla(0, 0%, 100%, 1);
+        margin: 3rem 0rem;
+    }
+
+}

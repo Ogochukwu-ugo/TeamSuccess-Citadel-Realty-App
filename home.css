@@ -1,0 +1,36 @@
+/* body{
+    overflow-x: hidden;
+} */
+
+.home-pro {
+    margin-top: 12rem;
+    padding: 1.4rem 2.5rem;
+}
+
+.home-feat {
+    margin-top: 2rem;
+    padding: 1.4rem 2.5rem;
+}
+
+.tab-pane > form .homeBtn{
+    color: hsla(223, 65%, 44%, 1);
+}
+
+
+
+
+@media only screen and (min-width: 425px) {
+    .home-pro {
+        margin-top: 16rem;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .home-pro {
+        margin-top: .7rem;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .home-pro {
+        margin-top: 1rem;
+    }
+}

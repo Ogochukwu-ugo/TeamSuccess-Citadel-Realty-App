@@ -10,17 +10,16 @@
         rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
         crossorigin="anonymous"
     >
-    <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="./home.css">
 </head>
 <body>
     <!-------------------Navigation Section--------------------------->
 
-    <nav  class="navbar menu navbar-expand-lg" aria-label="Main navigation" >
+    <nav  class="navbar menu navbar-expand-lg fixed-top" aria-label="Main navigation" >
         <div class="container-fluid ">
           <a class="navbar-brand" href="">
-            <img class="logo" src="./Images/vector-file 2.png" alt="App logo">
+            <img class="logo" src="./Images/Whole-logo.png" alt="App logo">
           </a>
           <button class="navbar-toggler collapsed " type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-content" aria-controls="navbar-content">
             <span class="toggler-icon top-bar"></span>
@@ -31,7 +30,7 @@
           <div class="offcanvas offcanvas-end "  tabindex="-1" id="navbar-content" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel">
-                <img class="logo1" src="./Images/vector-file 2.png" alt="App logo">
+                <img class="logo1" src="./Images/Whole-logo.png" alt="App logo">
               </h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
@@ -39,13 +38,16 @@
             <div class="offcanvas-body navLinkContainer">
               <ul class="nav navbar-nav nav-links">
                 <li class="nav-item">
-                  <a  class="nav-link "  href="./register.html">Home</a>
+                  <a  class="nav-link "  href="#features">Buy</a>
                 </li>
                 <li  class="nav-item">
-                  <a  class="nav-link "  href="#"> Properties</a>
+                  <a  class="nav-link "  href="#features"> Sell</a>
                 </li>
                 <li  class="nav-item">
-                  <a  class="nav-link "  href="./faq.html">FAQS</a>
+                  <a  class="nav-link "  href="#features">Rent</a>
+                </li>
+                <li  class="nav-item">
+                  <a  class="nav-link " href="#agents">Agents</a>
                 </li>
                 <li  class="nav-item">
                   <a class="nav-link " href="#blog">Blog</a>
@@ -54,8 +56,6 @@
                   <a class="nav-link " href="./contact.html">Contact us</a>
                 </li>
               </ul>
-                <button  class="btn btn-md navBtn logbtn" href="./login.html">Login</button>
-              
               <button class="btn btn-md navBtn" id="signUp">Sign up</button>
             </div>
 
@@ -65,7 +65,7 @@
 
       <!-------------------Hero Section----------------------->
 
-      <header class="hero-section land-hero container-fluid">
+      <header class="hero-section">
         <div class="row hero-row">
             <div class="col-md-6 hero-content">
                 <h1>
@@ -73,16 +73,16 @@
                 </h1>
 
                 <p>
-                    We are here to help you find it. Whether you are looking to buy, rent, or sell a property, our team of experienced real estate professionals is dedicated to providing you with the support and knowledge you need to make informed decisions.
+                    We provide our clients with masterpieces that give oue clients lasting value.
                 </p>
 
             </div>
 
-            <div class="col-md-6 hero-image land-hero-image">
+            <div class="col-md-6 hero-image">
                 <img src="./Images/Landing-image1.png" alt="Image of a building">
             </div>
         </div>
-        <div class="hero-services land-hero-service">
+        <div class="hero-services">
             <ul class="nav nav-tabs">
                 <li class="nav-item" >
                   <a class="nav-link "  href="#buy" data-bs-toggle="tab">Buy</a>
@@ -95,7 +95,7 @@
                 </li>
               </ul>
         </div>
-        <div class="tab-content land-hero-service-tab">
+        <div class="tab-content">
             <div class="tab-pane container" id="buy">
                 <form class="service-detail" role="search">
                     <div class="location">
@@ -116,7 +116,7 @@
                             <option value="Semi-Detached">Price</option>
                         </select>
                     </div>
-                    <input type="button" value="Search now">
+                    <input type="button" value="Search now" class="homeBtn">
               </form>
             </div>
 
@@ -140,7 +140,7 @@
                             <option value="Semi-Detached">Price</option>
                         </select>
                     </div>
-                    <input type="button" value="Search now">
+                    <input type="button" value="Search now" class="homeBtn">
               </form>
             </div>
 
@@ -164,168 +164,55 @@
                             <option value="Semi-Detached">Price</option>
                         </select>
                     </div>
-                    <input type="button" value="Search now">
+                    <input type="button" value="Search now" class="homeBtn">
               </form>
             </div>
         </div>
       </header>
 
-      <!------------------------------Our Services----------------------->
+      
 
-      <section class="services land-service container-fluid">
-        <h3>Our Services</h3>
-        <p>Our company offers a wide range of services to help you find your dream home as quickly and easily as possible.</p>
-        <div class="row service-row">
-            <div class="col-lg-5 service-column">
-                <figure class="service-image">
-                    <img src="./Images/Frame 178.png" alt=" An image of a Semi-Detached building">
-                </figure>
-            </div>
-            <div class="col-lg-7 service-column">
-                <div class="col service-column1-right">
-                    <figure class="service-icon">
-                        <img src="./Images/buy-home 2.png" alt="A house icon">
-                    </figure>
-                    <div class="service-home">
-                        <h5>Buy A Home</h5>
-                        <p>We understand that buying a home can be an overwhelming process,
-                             so we provide services to make it as stress-free as possible for you which includes:  
-                             Property search, Property virtual tour, Home inspection etc
-                        </p>
-                    </div>
+      <!------------------------Projects Section--------------->
+      <section class="projects home-pro">
+        <h3>Our Projects</h3>
+        <p>We provide real estate solutions that suits every clients needs.</p>
+        <div class="row project-row">
+            <div class="col-lg-7 project-column">
+                <div class="col project-column-left ">
+                    <figure class="project-sect">
+                        <img src="./Images/Frame 197.png" alt="An estate overview">  
+                        <figcaption>Land Properties</figcaption>                  
+                        </figure>
                 </div>
-                <div class="col service-column-right">
-                    <figure class="service-icon">
-                        <img src="./Images/key_1 2.png" alt="A key icon">
-                    </figure>
-                    <div class="service-home">
-                        <h5>Rent A Home</h5>
-                        <p>
-                            At Citadel Realty, we understand that finding the perfect rental home can be a challenging task. 
-                            That's why we offer a wide range of services to help you find and secure a rental home that meets your needs and preferences.
-                        </p>
-                    </div>
-                </div>
-                <div class="col service-column-right">
-                    <figure class="service-icon">
-                        <img src="./Images/house2.png" alt="A house icon">
-                    </figure>
-                    <div class="service-home">
-                        <h5>Sell A Home</h5>
-                        <p>
-                            Our team of experienced real estate professionals will guide you through the home selling process and provide you with the best support
-                             in order  to make informed decisions in order to gain 100% profit or more from every sale.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section>
-
-      <!-----------------------Latest Section---------------------------->
-      <section class="latest land-latest container-fluid">
-        <h3>Latest Properties</h3>
-        <div class="row late-row">
-                <div class="late-propty">
-                    <figure>
-                        <img src="./Images/Frame 76.png" alt="">
-                    </figure>
-                    <div class="late-propty-details">
-                        <h5>4 Bedroom Duplex</h5>
-                        <p>123, Ozumba Mbadiwe, VI, Lagos</p>
-                        <span> ₦210,000,000</span>
-                    </div>
-                </div>
-            
-            <div class="late-propty">
-                <figure>
-                    <img src="./Images/Frame 78.png" alt="">
-                </figure>
-                <div class="late-propty-details">
-                    <h5>4 Bedroom Duplex</h5>
-                    <p>123, Ozumba Mbadiwe, VI, Lagos</p>
-                    <span> ₦210,000,000</span>
-                </div>
-            </div>
-            <div class="late-propty">
-                <figure>
-                    <img src="./Images/Frame 85.png" alt="">
-                </figure>
-                <div class="late-propty-details">
-                    <h5>4 Bedroom Duplex</h5>
-                    <p>123, Ozumba Mbadiwe, VI, Lagos</p>
-                    <span> ₦210,000,000</span>
-                </div>
-            </div>
-            <div class="late-propty">
-                <figure>
-                    <img src="./Images/Frame 87.png" alt="">
-                </figure>
-                <div class="late-propty-details">
-                    <h5>4 Bedroom Duplex</h5>
-                    <p>123, Ozumba Mbadiwe, VI, Lagos</p>
-                    <span> ₦210,000,000</span>
-                </div>
-            </div>
-        </div>
-        <button class="blogBtn" type="button">View More</button>
-      </section>
-
-      <!-----------------------Why Choose Section---------------------------->
-
-      <section class="why container-fluid">
-        <h3 id="why-head">Why Choose Us?</h3>
-        <div class="line"></div>
-        <div class="row why-row">
-            <div class="col-md-6 why-column">
-                <div class="col why-column-details">
-                    <span>01.</span>
-                    <h5>Customer Service</h5>
-                    <article>
-                        We pride ourselves on our commitment to customer service. 
-                        Our goal is to help you find your dream home or rental property and we will work tirelessly to make that happen. 
-                        We will be available to answer any questions or concerns you may have throughout the entire process.
-                    </article>
-                    <div class="line"></div>
-                </div>
-                
-                <div class="col why-column-details">
-                    <span>03.</span>
-                    <h5>Customized Approach</h5>
-                    <article>
-                        We understand that every individual has their own unique needs and preferences when it comes to finding a home. 
-                        That's why we take the time to truly understand your needs and preferences, so we can help you find a home that not only meets but exceeds your expectations.
-                    </article>
-
+                <div class="col project-column-left">
+                    <figure class="project-sect">
+                        <img src="./Images/Frame 199.png" alt="An estate overview">  
+                        <figcaption>Office Space</figcaption>                  
+                        </figure>
                 </div>
                 
             </div>
-            <div class="col-md-6  why-column">
-                <div class="col why-column-details">
-                    <span>02.</span>
-                    <h5>Expertise</h5>
-                    <article>
-                        Our team of experienced real estate professionals has extensive knowledge of the local market and can provide you with detailed information on neighborhoods and local amenities.
-                         We also have the expertise to assist with information on property history, recent sales, and current market trends to help you make informed decisions.
-                    </article>
-                    <div class="line"></div>
+            <div class="col-lg-5 project-column">
+                <div class="col project-column-right">
+                    <figure class="project-sect">
+                        <img src="./Images/Frame 198.png" alt="An image of a kitchen" >
+                        <figcaption>Warehouse</figcaption>                    
+                        </figure>
                 </div>
-                <div class="col why-column-details">
-                    <span>04.</span>
-                    <h5>Convenience</h5>
-                    <article>
-                        We offer a wide range of services to make your home-buying or renting journey as stress-free as possible. 
-                        From searching for properties to negotiating the best price, we will be with you every step of the way. We also provide additional services like mortgage pre-approval, home inspection and property management.
-                    </article>
-                   
+                <div class="col project-column-right">
+                    <figure class="project-sect">
+                        <img src="./Images/Frame 200.png" alt="An image of a living room">   
+                        <figcaption>Event Halls</figcaption>                 
+                        </figure>
                 </div>
             </div>
         </div>
+        <button class="blogBtn" type="button">VIEW ALL</button>
       </section>
 
       <!-----------------------Features Section---------------------------->
 
-      <section class="features container-fluid land-feat" id="features">
+      <section class="features home-feat" id="features">
         <h3>Featured Properties</h3>
         <div class="feat-images-wrapper">
             <div class="row upper-feat-images">
@@ -425,96 +312,11 @@
       </section>
 
 
-      <!---------------------Blog Section--------->
-
-      <article class="blog container-fluid land-blog" id="blog">
-        <h3>Our Blog and Articles</h3>
-        <div class="row blog-row">
-            <div class="col-lg-6 blog-column">
-                <picture>
-                <img src="./Images/Land picture.png" alt="An estate overview">                    
-                </picture>
-                <article>
-                    <h4>How to Invest in Real Estate  </h4>
-                    <span>Felix Nic</span>
-                    <p>
-                        Investing in real estate can be a great way to build wealth and generate income.
-                         Here are some steps you can take to get started. <a href="http://" class="blog-link">...Read More.</a>
-                    </p>
-                </article>
-            </div>
-            <div class="col-lg-6 blog-column1">
-                <div class="col blog-column1-right">
-                    <picture>
-                        <img src="./Images/Blog-Image2.png" alt="An image of a kitchen">                    
-                        </picture>
-                        <article>
-                            <h4>Top Ten Tips For Best Kitchen Care </h4>
-                            <span>Monica Eze</span>
-                            <p>
-                                There are several reasons why some kitchens may appear breathtaking at first sight. 
-                                One of the main reasons is the overall design and layout of the kitchen.<a href="http://" class="blog-link">...Read More.</a>
-                            </p>
-                        </article>
-                </div>
-                <div class="col blog-column1-right">
-                    <picture>
-                        <img src="./Images/Blog-Image3.png" alt="An image of a living room">                    
-                        </picture>
-                        <article>
-                            <h4>Modern Living Room Design Ideas </h4>
-                            <span>Vivian Ani</span>
-                            <p>
-                                Minimalist design: 
-                                A modern minimalist living room design features clean lines, a neutral color palette, and minimal decor. <a href="http://" class="blog-link">...Read More.</a>
-                            </p>
-                        </article>
-                </div>
-            </div>
-        </div>
-        <button class="blogBtn" type="button">Read More</button>
-      </article>
-
-      <section class="team container-fluid">
-        <div class="row team-row">
-            <div class="col-lg-4 team-column-right">
-                <h4>Meet Our Agents</h4>
-            </div>
-            <div class="col-lg-6 team-column-left">
-                <div class="teams">
-                    <picture>
-                        <img src="./Images/Agent-image.png" alt="">
-                    </picture>
-                    <div class="teams-detail">
-                        <h4>John Lee</h4>
-                        <span>Realtor</span>
-                    </div>
-                </div>
-                <div class="teams">
-                    <picture>
-                        <img src="./Images/Agent-image.png" alt="">
-                    </picture>
-                    <div class="teams-detail">
-                        <h4>John Lee</h4>
-                        <span>Realtor</span>
-                    </div>
-                </div>
-                <div class="teams">
-                    <picture>
-                        <img src="./Images/Agent-image.png" alt="">
-                    </picture>
-                    <div class="teams-detail">
-                        <h4>John Lee</h4>
-                        <span>Realtor</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section>
+      
 
       <!------------------Property Owner Section---------------->
 
-      <section class="owner-section land-own container-fluid">
+      <section class="owner-section container-fluid home-own">
         <h3>Are you a property <span>owner?</span></h3>
         <p>Enter your email address to get listed</p>
         <form action="">
@@ -523,7 +325,7 @@
         </form>
       </section>
 
-      <footer class="container-fluid land-foot">
+      <footer class="container-fluid home-foot">
         <div class="row footer-row">
             <div class="col-md-3 footer-column">
                 <h5>Explore</h5>
@@ -596,7 +398,7 @@
         <span class="copyright">Copyright 2023 Citadel Realty all rights reserved</span>
       </footer>
 
-      <!-- <script src="./form.js" ></script> -->
+    
       <script src="./app.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 

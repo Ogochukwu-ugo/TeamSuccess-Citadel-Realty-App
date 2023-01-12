@@ -113,7 +113,7 @@ body {
 li > .nav-link  {
     font-family: Montserrat;
     font-size: 1rem;
-    font-weight: 800;
+    font-weight: 600;
     color: hsla(0, 0%, 20%, 1);
 }
 
@@ -126,10 +126,17 @@ li > .nav-link  {
 
 .navBtn {
     width: 120px;
-    background: hsla(50, 100%, 55%, 1);
+    background: transparent;
+    border: 1px solid hsla(223, 54%, 22%, 1);
+    border-radius: .6rem;
+    color: hsla(0, 0%, 0%, 1);
     margin-top: 1rem;
-    font-size: 1rem;
-    font-weight: 800;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.logbtn {
+    border: none;
 }
 
 /* Hero Section */
@@ -175,7 +182,7 @@ li > .nav-link  {
     text-align: center;
     border: none;
     border-radius: 0rem;
-    background: hsla(223, 65%, 44%, 1);
+    background: hsla(223, 54%, 22%, 1);
 }
 
 .hero-services li a {
@@ -188,7 +195,7 @@ li > .nav-link  {
     width: 100%;
     margin-top: -1.0rem;
     padding-top: 1.1rem;
-    background: hsla(223, 65%, 44%, 1);
+    background: hsla(223, 54%, 22%, 1);
 }
 
 #location {
@@ -287,10 +294,12 @@ li > .nav-link  {
     font-weight: 500;
 }
 
+
 /* Projects Section  */
 
 .projects,
-.services  {
+.services,
+.latest  {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -316,6 +325,11 @@ li > .nav-link  {
     margin: 1rem 0rem;
 }
 
+.late-propty {
+   display: flex;
+   flex-direction: column;
+}
+
 /* Featured Section */
 
 .features {
@@ -337,7 +351,7 @@ li > .nav-link  {
     font-size: .8rem;
     font-weight: 700;
     color: hsla(0, 0%, 100%, 1);
-    background-color: hsla(223, 65%, 44%, 1);
+    background-color: hsla(223, 54%, 22%, 1);
 }
 
 /* Blog Section */
@@ -353,7 +367,7 @@ li > .nav-link  {
     height: 3rem;
     font-size: 0.9rem;
     font-weight: 700;
-    margin: auto 4rem;
+    margin: auto 3.2rem;
     margin-top: .8rem;
     text-align: center;
     border: none;
@@ -370,7 +384,8 @@ li > .nav-link  {
 
 
 .blog-column picture img,
-.blog-column1-right picture img {
+.blog-column1-right picture img,
+.late-propty > figure img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -419,15 +434,15 @@ li > .nav-link  {
 
 /* Agents Section */
 
-.agents {
+/* .agents {
     justify-content: center;
     align-items: center;
     padding: 4rem 2.5rem;
     margin-top: 2rem;
     background-color: hsla(0, 0%, 100%, 1);
-}
+} */
 
-.agents h3,
+.latest h3,
 .blog h3,
 .features h3 {
     font-size: 1.8rem;
@@ -437,7 +452,8 @@ li > .nav-link  {
     color: hsla(0, 0%, 20%, 1);
 }
 
-.agents-row,
+/* .agents-row, */
+.late-row
 .blog-row,
 .lower-feat-images,
 .upper-feat-images,
@@ -446,35 +462,37 @@ li > .nav-link  {
     margin-left: 0;
 }
 
-.agents-column,
+/* .agents-column, */
 .upper-image {
-    margin: 0rem .1rem ;
+    margin: 0rem  ;
 }
 
 
-.agents-column article h5,
-.apartment {
+/* .agents-column article h5, */
+.apartment,
+.late-propty-details h5 {
     font-size: 1.5rem;
     font-weight: 500;
     margin-top: 1.5rem;
     color: hsla(0, 0%, 0%, 1);
 }
 
-.agents-column article span,
-.feat-location {
+/* .agents-column article span, */
+.feat-location,
+.late-propty-details p {
     font-size: .7rem;
     font-weight: 500;
     color: hsla(0, 0%, 0%, 0.6);
 }
 
-.agents-column article p,
+/* .agents-column article p, */
 .feat-house-type {
     font-size: .9rem;
     font-weight: 500;
     color: hsla(0, 0%, 0%, 1);
 }
 
-.agents-column > article picture img,
+/* .agents-column > article picture img, */
 .rent-image img,
 .project-sect img,
 .service-column > figure img,
@@ -499,7 +517,7 @@ li > .nav-link  {
 }
 
 .owner-section h3 span {
-    border: 0.1rem solid hsla(0, 0%, 20%, 1);
+    border: 0.1rem solid hsla(223, 54%, 22%, 1);
 }
 
 .owner-section p,
@@ -543,7 +561,7 @@ footer {
     text-align: center;
     margin-top: 5.5rem;
     padding: 1.5rem 3rem;
-    background-color: hsla(223, 65%, 44%, 1);
+    background-color: hsl(223, 54%, 22%, 100%);
 }
 
 .footer-row {
@@ -589,6 +607,15 @@ footer {
     color: hsla(0, 0%, 100%, 1);
 }
 
+@media only screen and (min-width: 375px) {
+    .blogBtn{
+        margin: auto 5.2rem;
+    }
+
+    .projects {
+        margin-top: 4rem;
+    }
+}
 
 @media only screen and (min-width: 425px) {
     .tab-content {
@@ -596,7 +623,6 @@ footer {
         width: 100%;
         margin-top: -1.0rem;
         padding-top: 1.1rem;
-        background: hsla(223, 65%, 44%, 1);
     }
 
     .blog {
@@ -610,9 +636,14 @@ footer {
         margin-top: 1.4rem;
     }
 
+    .projects {
+        margin-top: 8rem;
+    }
+
     .footer-row {
         margin: auto;
         padding: 2rem 7.2rem;
+        border: 2px solid;
     }
 }
 
@@ -634,7 +665,6 @@ footer {
         width: 85%;
         margin-top: -.25rem;
         padding-top: 1.1rem;
-        background: hsla(223, 65%, 44%, 1);
     }
 
     .location img {
@@ -688,16 +718,24 @@ footer {
         margin: auto 20rem;
         margin-top: 1.5rem;
     }
+
+    .footer-row {
+        padding: 2rem 5rem ;
+    }
 }
 
 @media only screen and (min-width:1024px) {
     .navLinkContainer {
         justify-content: space-between;
-        margin-left: 15rem;
+        margin-left: 6rem;
+    }
+
+    .menu {
+        margin: .3rem 1rem;
     }
 
     #navbar-content {
-        margin-top: 3.1rem;
+        margin-top: 2.1rem;
         width: 0;
         height: 0;
     }
@@ -708,8 +746,9 @@ footer {
 
     .navBtn {
         margin-top: 0;
-        margin-right: .8rem;
+        margin-right: 1rem;
     }
+
 
     .hero-row {
         margin-top: 10rem;
@@ -756,7 +795,7 @@ footer {
         text-align: center;
         border: none;
         border-radius: 0rem;
-        background: hsla(223, 65%, 44%, 1);
+        background: hsla(223, 54%, 22%, 1);
     }
 
 
@@ -765,7 +804,7 @@ footer {
         width: 85%;
         margin-top: -.25rem;
         padding-top: 1.1rem;
-        background: hsla(223, 65%, 44%, 1);
+        background: hsla(223, 54%, 22%, 1);
     }
 
     .carousel-item img {
@@ -830,6 +869,11 @@ footer {
         background-color: hsla(193, 53%, 97%, 1);
     }
 
+    .late-propty-details {
+        padding: 2rem 5rem;
+        text-align: left;
+        color: hsla(0, 0%, 40%, 1);
+    }
 
     .service-column1-right{
         display: flex;
@@ -852,24 +896,27 @@ footer {
         background-color: hsla(193, 53%, 97%, 1);
     }
 
-    .service-home h5 {
+    .service-home h5{
         font-size: 1.6rem;
         font-weight: 700;
     }
     
     .service-home p {
-        font-size: 1rem;
+        font-size: .8rem;
         font-weight: 500;
     }
 
     .service-home {
         width: 90%;
-        padding: 1.5rem 1rem;
+        padding: .9rem 1rem;
     }
+
     
     .projects,
     .services,
-    .details  {
+    .details,
+    .latest,
+    .why  {
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -895,18 +942,20 @@ footer {
         margin-top: 1.4rem;
     }
 
-    .agents-row,
+    .team-row,
+    .late-row
     .blog-row,
     .lower-feat-images,
     .upper-feat-images,
     .project-row,
-    .details-row {
+    .details-row,
+    .why-row {
         margin: 0 0.6rem;
     }
 
-    .agents h3,
+    .latest h3,
     .blog h3,
-    .features h3 {
+    .features h3{
         font-size: 2.5rem;
         padding: 1rem 2.5rem;
     }
@@ -926,10 +975,23 @@ footer {
         margin-top: -.5rem;
     }
     
-    .agents-column {
-        width: 22rem;
-        margin: 0 1.1rem;
+   .late-propty > figure img {
+        width: 26rem;
+        margin: 1rem 0rem;
+        object-fit: cover;
+   }
+
+    .late-propty {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;
+        background-color: hsla(0, 0%, 100%, 1);
     }
+
+    .late-propty figure {
+        margin: auto 0;
+    }
+
 
     .owner-section {
         margin-top: 5rem;
@@ -942,6 +1004,12 @@ footer {
         font-weight: 700;
         text-transform: capitalize;
         color: hsla(0, 0%, 20%, 1);
+    }
+
+    .late-propty-details span {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: hsla(0, 0%, 40%, 1);
     }
 
     .owner-section p,
@@ -982,7 +1050,7 @@ footer {
         text-align: center;
         margin-top: 5rem;
         padding: 1.5rem 3rem;
-        background-color: hsla(223, 65%, 44%, 1);
+        background-color: hsla(223, 54%, 22%, 1);
     }
     
     .footer-row {

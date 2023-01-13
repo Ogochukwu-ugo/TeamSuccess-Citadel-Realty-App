@@ -1,0 +1,17 @@
+.faq {
+    /* position: absolute; */
+    margin-top:1rem;
+    padding: 2rem 2.5rem;
+    border: 2px solid;
+}
+
+.dropdown-toggle {
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+
+.faq-content {
+    border-bottom: 1px solid hsla(0, 0%, 20%, 1);
+    
+}

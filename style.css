@@ -47,7 +47,7 @@ body {
     position: absolute;
     height: .15rem;
     width: 100%;
-    background: hsl(214, 100%, 36%);
+    background: hsla(223, 54%, 22%, 1);
     border-radius: 0.6rem;
     opacity: 1;
     left: 0;
@@ -119,15 +119,14 @@ li > .nav-link  {
 
 .nav-link[aria-current="page"],
 .nav-item:hover{
-    text-decoration: underline solid hsl(214, 100%, 36%) 0.2rem !important;
+    text-decoration: underline solid hsla(223, 54%, 22%, 1) 0.2rem !important;
     text-underline-offset: 0.6rem;
 }
 
 
 .navBtn {
     width: 120px;
-    background: transparent;
-    border: 1px solid hsla(223, 54%, 22%, 1);
+    background: hsla(50, 100%, 55%, 1);
     border-radius: .6rem;
     color: hsla(0, 0%, 0%, 1);
     margin-top: 1rem;
@@ -136,6 +135,7 @@ li > .nav-link  {
 }
 
 .logbtn {
+    background: transparent ;
     border: none;
 }
 
@@ -143,11 +143,12 @@ li > .nav-link  {
 
 .hero-section {
     padding: 0rem 3rem;
+    margin: auto;
     height: 100vh;
 }
 
 .hero-row {
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 .hero-content >h1 {
@@ -250,6 +251,8 @@ li > .nav-link  {
 
 /* Our Service Section */
 .services {
+    margin: auto;
+    margin-top:1rem;
     background-color: hsla(0, 0%, 100%, 1);
 }
 
@@ -271,6 +274,7 @@ li > .nav-link  {
     padding: 1rem;
     border-radius: .4rem ;
     margin: .9rem 0rem;
+    margin: auto;
     background-color: hsla(193, 53%, 97%, 1);
 }
 
@@ -295,6 +299,12 @@ li > .nav-link  {
 }
 
 
+.late-propty-details span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsla(0, 0%, 40%, 1);
+}
+
 /* Projects Section  */
 
 .projects,
@@ -304,6 +314,7 @@ li > .nav-link  {
     align-items: center;
     text-align: center;
     padding: 2rem 2.5rem;
+    margin: auto;
     margin-top: 4rem;
 }
 
@@ -328,6 +339,7 @@ li > .nav-link  {
 .late-propty {
    display: flex;
    flex-direction: column;
+   margin: auto -1rem;
 }
 
 /* Featured Section */
@@ -336,6 +348,7 @@ li > .nav-link  {
     justify-content: center;
     align-items: center;
     padding: 4rem 2.5rem;
+    margin: auto;
     margin-top: 10rem;
     background-color: hsla(0, 0%, 100%, 1);
 }
@@ -357,6 +370,7 @@ li > .nav-link  {
 /* Blog Section */
 
 .blog {
+    margin: auto;
     margin-top: 1rem;
     padding: 4rem 2.5rem;
     background-color: hsla(193, 53%, 97%, 1);
@@ -460,6 +474,7 @@ li > .nav-link  {
 .project-row,
 .service-row {
     margin-left: 0;
+    margin: auto;
 }
 
 /* .agents-column, */
@@ -482,7 +497,7 @@ li > .nav-link  {
 .late-propty-details p {
     font-size: .7rem;
     font-weight: 500;
-    color: hsla(0, 0%, 0%, 0.6);
+    color: hsla(0, 0%, 20%, 1);
 }
 
 /* .agents-column article p, */
@@ -559,6 +574,7 @@ li > .nav-link  {
 
 footer {
     text-align: center;
+    margin: auto -1rem;
     margin-top: 5.5rem;
     padding: 1.5rem 3rem;
     background-color: hsl(223, 54%, 22%, 100%);
@@ -913,10 +929,11 @@ footer {
 
     
     .projects,
-    .services,
+    /* .services, */
     .details,
     .latest,
-    .why  {
+    .why,
+    .faq  {
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -967,7 +984,6 @@ footer {
     }
 
     .upper-image {
-        feature-temp
         width: 16rem;
         margin: 0rem .9rem;
     }

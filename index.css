@@ -1,4 +1,5 @@
 .why {
+    margin: auto;
     background-color: hsla(223, 54%, 22%, 1);
 }
 #why-head {
@@ -8,9 +9,12 @@
     color: hsla(0, 0%, 100%, 1);
 }
 
+
+
 .why-column-details {
     text-align: left;
-    padding: .6rem 1rem;
+    margin: auto;
+    padding: .6rem .1rem;
     color: hsla(0, 0%, 100%, 1);
 }
 
@@ -136,7 +140,11 @@
         margin-top: 2rem;
     }
 
-    
+    .why-column-details {
+        text-align: left;
+        padding: .6rem 1rem;
+        color: hsla(0, 0%, 100%, 1);
+    }
 
     .why {
         background: hsla(223, 54%, 22%, 100);

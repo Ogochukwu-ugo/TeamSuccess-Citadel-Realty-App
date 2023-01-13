@@ -11,56 +11,57 @@
         crossorigin="anonymous"
     >
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./home.css">
 </head>
 <body>
   <!-------------------Navigation Section--------------------------->
 
-  <nav  class="navbar menu navbar-expand-md fixed-top" aria-label="Main navigation" >
-      <div class="container-fluid ">
-        <a class="navbar-brand" href="">
-          <img class="logo" src="./Images/Whole-logo.png" alt="App logo">
-        </a>
-        <button class="navbar-toggler collapsed " type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-content" aria-controls="navbar-content">
-          <span class="toggler-icon top-bar"></span>
-          <span class="toggler-icon middle-bar"></span>
-          <span class="toggler-icon bottom-bar"></span>
-        </button>
+  <nav  class="navbar menu navbar-expand-lg" aria-label="Main navigation" >
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="">
+        <img class="logo" src="./Images/vector-file 2.png" alt="App logo">
+      </a>
+      <button class="navbar-toggler collapsed " type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-content" aria-controls="navbar-content">
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
+      </button>
 
-        <div class="offcanvas offcanvas-end "  tabindex="-1" id="navbar-content" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel">
-              <img class="logo1" src="./Images/Whole-logo.png" alt="App logo">
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-
-          <div class="offcanvas-body navLinkContainer">
-            <ul class="nav navbar-nav nav-links">
-              <li class="nav-item">
-                <a  class="nav-link "  href="index.html">Buy</a>
-              </li>
-              <li  class="nav-item">
-                <a  class="nav-link "  href="#"> Sell</a>
-              </li>
-              <li  class="nav-item">
-                <a  class="nav-link "  href="#">Rent</a>
-              </li>
-              <li  class="nav-item">
-                <a  class="nav-link " href="#">Agents</a>
-              </li>
-              <li  class="nav-item">
-                <a class="nav-link " href="">Blog</a>
-              </li>
-              <li  class="nav-item">
-                <a class="nav-link " href="">Contact us</a>
-              </li>
-            </ul>
-            <button class="btn btn-md navBtn">Sign up</button>
-          </div>
-
+      <div class="offcanvas offcanvas-end "  tabindex="-1" id="navbar-content" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel">
+            <img class="logo1" src="./Images/vector-file 2.png" alt="App logo">
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+
+        <div class="offcanvas-body navLinkContainer">
+          <ul class="nav navbar-nav nav-links">
+            <li class="nav-item">
+              <a  class="nav-link "  href="./register.html">Home</a>
+            </li>
+            <li  class="nav-item">
+              <a  class="nav-link "  href="#"> Properties</a>
+            </li>
+            <li  class="nav-item">
+              <a  class="nav-link "  href="./faqs.html">FAQS</a>
+            </li>
+            <li  class="nav-item">
+              <a class="nav-link " href="#blog">Blog</a>
+            </li>
+            <li  class="nav-item">
+              <a class="nav-link " href="./contact.html">Contact us</a>
+            </li>
+          </ul>
+            <button  class="btn btn-md navBtn logbtn" id="log">Login</button>
+          
+          <button class="btn btn-md navBtn" id="signUp">Sign up</button>
+        </div>
+
       </div>
-    </nav>
+    </div>
+  </nav>
 
       
 
@@ -120,6 +121,42 @@
 
       </section>
 
+      <!-----------------------------------Tour Section------------>
+
+      <section class="tour">
+        <h4>Schedule a tour</h4>
+        <form action="">
+          <div class="row">
+            <div class="col-lg-4">
+              <label for="property-type"> Property Type</label><br>
+              <select name="house" id="property-type" aria-placeholder="Select">
+                <option value="Duplex">Duplex</option>
+                <option value="Bungalow">Bungalow</option>
+                <option value="Semi-Detached">Semi-Detached</option>
+            </select><br>
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter Full Name">
+            </div>
+            <div class="col-lg-4">
+              <label for="date">Date</label><br>
+              <input type="date" name="date" id="date" placeholder="Select Tour Date"><br>
+              <label for="phone">Phone Number</label><br>
+              <input type="tel" name="phone" id=" phone" placeholder="Enter Phone Number">
+            </div>
+            <div class="col-lg-4">
+              <label for="time">Time</label><br>
+              <input type="time" name="time" id="time" ><br>
+              <label for="mail">Email Address</label><br>
+              <input type="email" name="mail" id="mail" placeholder="Enter Email Address">
+            </div>
+          </div>
+          <label for="message">Message</label><br>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="I am interested in this house"></textarea><br>
+          <button class="btn btn-lg tour-btn">Schedule Tour</button>
+        </form>
+
+      </section>
+
 
       
       <section class="features">
@@ -175,8 +212,32 @@
         <button class="blogBtn" type="button"  id="blogBtn">View More</button>
       </section>
       
-      
+      <!-----------------------------Manager Section---------------------->
 
+      <section class="manager container-fluid text-center">
+        <h3>Contact Property Manager</h3>
+        <p>Contact property managert to get more Information</p>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="call">
+              <img src="./Images/ic_baseline-local-phone.png" alt="">
+              <div class="call-agent">
+                <span>08070******</span>
+                <button>Call Agent</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="message">
+              <img src="./Images/logos_whatsapp-icon.png" alt="">
+              <div class="call-agent">
+                <span>08070******</span>
+                <button>Message Agent</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       
 
       <footer class="container-fluid">

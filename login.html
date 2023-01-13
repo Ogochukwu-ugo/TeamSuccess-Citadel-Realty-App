@@ -10,9 +10,58 @@
         rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
         crossorigin="anonymous"
     >
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+  <nav  class="navbar menu navbar-expand-lg " aria-label="Main navigation" >
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="">
+        <img class="logo" src="./Images/vector-file 2.png" alt="App logo">
+      </a>
+      <button class="navbar-toggler collapsed " type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-content" aria-controls="navbar-content">
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end "  tabindex="-1" id="navbar-content" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel">
+            <img class="logo1" src="./Images/Whole-logo.png" alt="App logo">
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body navLinkContainer">
+          <ul class="nav navbar-nav nav-links">
+            <li class="nav-item">
+              <a  class="nav-link "  href="">Home</a>
+            </li>
+            <li  class="nav-item">
+              <a  class="nav-link "  href="./home.html"> Properties</a>
+            </li>
+            <li  class="nav-item">
+              <a  class="nav-link "  href="./faqs.html">FAQS</a>
+            </li>
+            <li  class="nav-item">
+              <a class="nav-link " href="#blog">Blog</a>
+            </li>
+            <li  class="nav-item">
+              <a class="nav-link " href="./contact.html">Contact us</a>
+            </li>
+          </ul>
+        
+          <button  class="btn btn-md navBtn logbtn" id="log">Login</button>
+          
+          <button class="btn btn-md navBtn" id="signUp">Sign up</button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
   <main class="log-main">
     <h2>Login</h2>
     
@@ -20,7 +69,7 @@
       <input type="email" name="email" id="email"  placeholder="Email" autocomplete="username" required><br>
       <input type="password" name="password" id="pswd" placeholder="Password" autocomplete="current-password" required><br>
       <span id="Forgot">Forgot Password?</span>
-      <button type="submit" class="formbtn logbtn"> Login</button>
+      <button type="submit" class="formbtn logbtn" id="log"> Login</button>
     </form>
     <div class="log-link">
       Don't have an account? <a href="./register.html">Sign up</a>

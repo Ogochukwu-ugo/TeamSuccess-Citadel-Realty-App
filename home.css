@@ -3,7 +3,7 @@
 } */
 
 .home-pro {
-    margin-top: 12rem;
+    margin-top: -3rem;
     padding: 1.4rem 2.5rem;
 }
 
@@ -14,6 +14,24 @@
 
 .tab-pane > form .homeBtn{
     color: hsla(223, 65%, 44%, 1);
+}
+
+.manager h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    color: hsla(0, 0%, 0%, 1)
+}
+
+.manager p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsla(0, 0%, 0%, 1);
+}
+
+.call img,
+.message img {
+    height: 1.6rem;
 }
 
 

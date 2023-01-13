@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-import { getDatabase,  ref, update } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+// import { getDatabase,  ref, update } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
 import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -18,7 +18,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const db = getDatabase(app);
+// const db = getDatabase(app);
 const auth = getAuth();
 
 
@@ -39,12 +39,12 @@ login.addEventListener("submit", (e)=>{
         // Signed in 
         const user = userCredential.user;
 
-            if(email === user || password === user) {
-                const dt = new Date();
-                update(ref(db, 'users/' + userId),{
-                last_login: dt,
+            if(user !== " ") {
+                // const dt = new Date();
+                // update(ref(db, 'users/' + userId),{
+                // last_login: dt,
 
-                });
+                // });
                 console.log("Login successful");
                 window.location.href = './home.html';
             }

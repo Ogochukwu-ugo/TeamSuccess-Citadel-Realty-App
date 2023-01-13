@@ -20,7 +20,7 @@
     <nav  class="navbar menu navbar-expand-lg " aria-label="Main navigation" >
         <div class="container-fluid ">
           <a class="navbar-brand" href="">
-            <img class="logo" src="./Images/Whole-logo.png" alt="App logo">
+            <img class="logo" src="./Images/vector-file 2.png" alt="App logo">
           </a>
           <button class="navbar-toggler collapsed " type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-content" aria-controls="navbar-content">
             <span class="toggler-icon top-bar"></span>
@@ -39,7 +39,7 @@
             <div class="offcanvas-body navLinkContainer">
               <ul class="nav navbar-nav nav-links">
                 <li class="nav-item">
-                  <a  class="nav-link "  href="">Home</a>
+                  <a  class="nav-link "  href="./home.html">Home</a>
                 </li>
                 <li  class="nav-item">
                   <a  class="nav-link "  href="./home.html"> Properties</a>
@@ -48,14 +48,14 @@
                   <a  class="nav-link "  href="./faqs.html">FAQS</a>
                 </li>
                 <li  class="nav-item">
-                  <a class="nav-link " href="#blog">Blog</a>
+                  <a class="nav-link " href="./index.html">Blog</a>
                 </li>
                 <li  class="nav-item">
                   <a class="nav-link " href="./contact.html">Contact us</a>
                 </li>
               </ul>
             
-              <button  class="btn btn-md navBtn logbtn" href="./login.html">Login</button>
+              <button  class="btn btn-md navBtn logbtn" id="log">Login</button>
               
               <button class="btn btn-md navBtn" id="signUp">Sign up</button>
             </div>
@@ -70,17 +70,18 @@
         <div class="row hero-row">
             <div class="col-md-6 hero-content">
                 <h1>
-                    Your Dream Home is Waiting For You
+                    Search For The Perfect Home
                 </h1>
 
                 <p>
-                    We provide our clients with masterpieces that give oue clients lasting value.
+                    We use the latest technology and tools to make the search process as efficient as possible. 
+                    Our online property search feature allows you to search for homes based on your specific criteria
                 </p>
 
             </div>
 
             <div class="col-md-6 hero-image">
-                <img src="./Images/Landing-image1.png" alt="Image of a building">
+                <img src="./Images/Frame 48.png" alt="Image of a building">
             </div>
         </div>
         <div class="hero-services">
@@ -101,7 +102,7 @@
                 <form class="service-detail" role="search">
                     <div class="location">
                         <img src="./Images/map-pin.png" alt="location-icon">
-                        <input type="text" id="location" placeholder="Lagos, Nigeria">
+                        <input type="text" id="location" placeholder="Location">
                     </div>
                     <div class="house-type">
                         <select name="house" id="house">
@@ -125,7 +126,7 @@
                 <form class="service-detail" role="search">
                     <div class="location">
                         <img src="./Images/map-pin.png" alt="location-icon">
-                        <input type="text" id="location" placeholder="Lagos, Nigeria">
+                        <input type="text" id="location" placeholder="Location">
                     </div>
                     <div class="house-type">
                         <select name="house" id="house">
@@ -149,7 +150,7 @@
                 <form class="service-detail" role="search">
                     <div class="location">
                         <img src="./Images/map-pin.png" alt="location-icon">
-                        <input type="text" id="location" placeholder="Lagos, Nigeria">
+                        <input type="text" id="location" placeholder="Location">
                     </div>
                     <div class="house-type">
                         <select name="house" id="house">
@@ -211,10 +212,115 @@
         <button class="blogBtn" type="button">VIEW ALL</button>
       </section>
 
-      <!-----------------------Features Section---------------------------->
+      <!-----------------------Rent Section---------------------------->
 
       <section class="features home-feat" id="features">
-        <h3>Featured Properties</h3>
+        <h3>Properties For Rent</h3>
+        <div class="feat-images-wrapper">
+            <div class="row upper-feat-images">
+                <div class="col-md-3 upper-image featImage">
+                    <figure class="rent-image" id="sale">
+                        <img src="./images/Frame 75.png" alt="Image of a storey building ">
+                        <figcaption>Sale - ₦210,000,000</figcaption>
+                    </figure>
+                    <article>
+                        <h4 class="apartment">Floxlane Park</h4>
+                        <span class="feat-location"> 123, Ozumba Mbadiwe, VI, Lagos </span><br>
+                        <p class="feat-house-type">4 Bedroom Duplex</p>
+                    </article>
+                </div>
+                <div class="col-md-3 upper-image featImage">
+                    <figure class="rent-image">
+                        <img src="./images/Frame 76.png" alt="Image of a storey building ">
+                        <figcaption>Sale - ₦220,000,000</figcaption>
+                    </figure>
+                    <article>
+                        <h4 class="apartment">Sarah Park</h4>
+                        <span class="feat-location"> 123, Ozumba Mbadiwe, VI, Lagos </span><br>
+                        <p class="feat-house-type">4 Bedroom Duplex</p>
+                    </article>
+                </div>
+                <div class="col-md-3 upper-image featImage">
+                    <figure class="rent-image">
+                        <img src="./images/Frame 77.png" alt="Image of a storey building ">
+                        <figcaption>Rent - ₦1,800,000</figcaption>
+                    </figure>
+                    <article>
+                        <h4 class="apartment">Flox Gardens</h4>
+                        <span class="feat-location"> 123, Ozumba Mbadiwe, VI, Lagos </span><br>
+                        <p class="feat-house-type">4 Bedroom Duplex</p>
+                    </article>
+                </div>
+                <div class="col-md-3 upper-image featImage">
+                    <figure class="rent-image">
+                        <img src="./images/Frame 78.png" alt="Image of a storey building ">
+                        <figcaption>Rent - ₦880,000</figcaption>
+                    </figure>
+                    <article>
+                        <h4 class="apartment">Nice View Park</h4>
+                        <span class="feat-location"> 123, Ozumba Mbadiwe, VI, Lagos </span><br>
+                        <p class="feat-house-type">4 Bedroom Duplex</p>
+                    </article>
+                </div>
+            </div>
+            <div class="row lower-feat-images">
+                <div class="col-md-3 upper-image featImage">
+                    <figure class="rent-image">
+                        <img src="./images/Frame 84.png" alt="Image of a storey building ">
+                        <figcaption>Rent - ₦2,000,000</figcaption>
+                    </figure>
+                    <article>
+                        <h4 class="apartment">Rosa Park Estate</h4>
+                        <span class="feat-location"> 123, Ozumba Mbadiwe, VI, Lagos </span><br>
+                        <p class="feat-house-type">4 Bedroom Duplex</p>
+                    </article>
+                </div>
+                <div class="col-md-3 upper-image featImage">
+                    <figure class="rent-image">
+                        <img src="./images/Frame 85.png" alt="Image of a storey building ">
+                        <figcaption>Sale - ₦180,000,000</figcaption>
+                    </figure>
+                    <article>
+                        <h4 class="apartment">Moon Lake Estate</h4>
+                        <span class="feat-location"> 123, Ozumba Mbadiwe, VI, Lagos </span><br>
+                        <p class="feat-house-type">4 Bedroom Duplex</p>
+                    </article>
+                </div>
+                <div class="col-md-3 upper-image featImage">
+                    <figure class="rent-image">
+                        <img src="./images/Frame 86.png" alt="Image of a storey building ">
+                        <figcaption>Rent - ₦750,000</figcaption>
+                    </figure>
+                    <article>
+                        <h4 class="apartment">Floxlane Park</h4>
+                        <span class="feat-location"> 123, Ozumba Mbadiwe, VI, Lagos </span><br>
+                        <p class="feat-house-type">6 Bedroom Duplex</p>
+                    </article>
+                </div>
+                <div class="col-md-3 upper-image featImage">
+                    <figure class="rent-image">
+                        <img src="./images/Frame 87.png" alt="Image of a storey building ">
+                        <figcaption>Rent - ₦920,000</figcaption>
+                    </figure>
+                    <article>
+                        <h4 class="apartment">Lekki Park</h4>
+                        <span class="feat-location"> 123, Ozumba Mbadiwe, VI, Lagos </span><br>
+                        <p class="feat-house-type">4 Bedroom Duplex</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <button class="blogBtn" type="button"  id="blogBtn">View More</button>
+      </section>
+
+
+
+
+
+      <!-----------------------Sell Section---------------------------->
+
+      <section class="features home-feat" id="features">
+        <h3>Properties For Sale</h3>
         <div class="feat-images-wrapper">
             <div class="row upper-feat-images">
                 <div class="col-md-3 upper-image featImage">

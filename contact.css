@@ -174,13 +174,27 @@ main > h1 {
   
 @media screen and (max-width:780px) {
     main{
-        width: 90%;
-        margin-top: 10rem;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 0rem ;
+        /* width: 300px; */
+        /* width: 90%; */
+        margin-top: -1rem;
+    }
+
+    .log-main {
+      width: 300px;
+      margin-top: 6.5rem;
+    }
+    .contact-main {
+      width: 300px;
+      margin-top: 10rem;
     }
 
     form {
-      margin: 0rem;
-      margin-top: 1.5rem;
+      margin: auto;
+      /* margin-top: 1.5rem; */
     }
     
    main > p {
@@ -196,9 +210,9 @@ main > h1 {
 
  .reg-wrapper {
   top: 50%;
-  width:250px;
+  width:300px;
   margin: auto;
-  margin-top: 16rem;
+  margin-top: 8rem;
 }
 
 #terms{
@@ -218,7 +232,7 @@ main > h1 {
 }
 
 .formBtns .col {
-  margin: .3rem 2rem;
+  margin: .3rem 3rem;
 }
 
 .formbtn {
@@ -226,7 +240,7 @@ main > h1 {
 }
 
 #terms {
-  margin: auto -7rem;
+  margin: auto -6rem;
 }
 
 .logbtn {
@@ -238,7 +252,7 @@ main > h1 {
   font-size: .7rem;
   font-weight: 600;
   margin-top: -.5rem;
-  margin-left: 7rem; 
+  margin-left: 11rem; 
   color: hsla(223, 65%, 44%, 1);
 }
 }

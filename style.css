@@ -659,7 +659,6 @@ footer {
     .footer-row {
         margin: auto;
         padding: 2rem 7.2rem;
-        border: 2px solid;
     }
 }
 
@@ -966,7 +965,8 @@ footer {
     .upper-feat-images,
     .project-row,
     .details-row,
-    .why-row {
+    .why-row,
+    .info-row {
         margin: 0 0.6rem;
     }
 

@@ -43,7 +43,7 @@
 .teams > picture img {
     width: 8rem;
     height: auto;
-    margin: auto 5rem;
+    margin: auto 6rem;
     object-fit: cover;
     border-radius: 100%;
 }
@@ -59,11 +59,11 @@
 .team-column-left {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: auto 0rem;
 }
 
 .teams > .teams-detail {
-   margin: auto -8rem;
+   margin: auto 1rem;
    text-align: center;
 }
 
@@ -165,7 +165,7 @@
      }
 
      .teams > picture img {
-        width: 8rem;
+        width: 6rem;
         height: auto;
         object-fit: cover;
         border-radius: 100%;
@@ -189,17 +189,17 @@
 
     .team {
         background: hsla(223, 54%, 22%, 1);
-
+        margin: auto;
     }
 
     .team-column-left {
         display: flex;
         flex-direction: row;
-        margin: 1.5rem  3rem;
+        margin: 1.5rem .3rem;
     }
 
     .teams {
-        margin: 1rem  3rem;
+        margin: 1rem 0rem;
     }
 
     
@@ -214,5 +214,7 @@
         color: hsla(0, 0%, 100%, 1);
         margin: 3rem 0rem;
     }
+
+   
 
 }

@@ -20,6 +20,12 @@ signUp.addEventListener('click', () => {
 window.location.href = "./register.html";
 });
 
+const log = document.getElementById('log');
+
+log.addEventListener('click', () => {
+window.location.href = "./login.html";
+});
+
 //This leads to detail page
 
 const images = document.getElementsByClassName("featImage");
@@ -67,15 +73,15 @@ rent.addEventListener("click", function (e) {
 
 });
 
-const agent = document.getElementById("agents");
-agent.addEventListener("click", function (e) {
-    e.preventDefault();
+// const agent = document.getElementById("agents");
+// agent.addEventListener("click", function (e) {
+//     e.preventDefault();
 
-    document.getElementById(e.target.getAttribute("herf").substr(1)).scrollIntoView({
-        behavior: 'smooth'
-    });
+//     document.getElementById(e.target.getAttribute("herf").substr(1)).scrollIntoView({
+//         behavior: 'smooth'
+//     });
 
-});
+// });
 
 const blog = document.getElementById("blog");
 blog.addEventListener("click", function (e) {

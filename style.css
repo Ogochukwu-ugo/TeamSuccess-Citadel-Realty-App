@@ -445,17 +445,6 @@ li > .nav-link  {
     background-color: hsla(0, 0%, 100%, 1);
 }
 
-
-/* Agents Section */
-
-/* .agents {
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 2.5rem;
-    margin-top: 2rem;
-    background-color: hsla(0, 0%, 100%, 1);
-} */
-
 .latest h3,
 .blog h3,
 .features h3 {
@@ -480,6 +469,7 @@ li > .nav-link  {
 /* .agents-column, */
 .upper-image {
     margin: 0rem  ;
+    cursor: pointer;
 }
 
 

@@ -1,6 +1,6 @@
-/* body{
+body{
     overflow-x: hidden;
-} */
+}
 
 .home-pro {
     margin-top: -3rem;
@@ -16,7 +16,7 @@
     color: hsla(223, 65%, 44%, 1);
 }
 
-.manager h3 {
+.manager h3{
     font-size: 1.5rem;
     font-weight: 700;
     margin-top: 1.5rem;
@@ -29,12 +29,137 @@
     color: hsla(0, 0%, 0%, 1);
 }
 
+.manager-row {
+    margin: auto;
+}
+
+.manager-column .call,
+.manager-column .message {
+    margin: .8rem 0rem;
+    padding: 1rem 2rem;
+    background-color: hsla(0, 0%, 100%, 1);
+}
+
 .call img,
 .message img {
     height: 1.6rem;
 }
 
+.call > figure,
+.message > figure {
+    padding: .6rem;
+    margin:2rem 0rem;
+    background-color: hsla(223, 54%, 22%, 1);
+}
 
+.call,
+.message {
+    display: flex;
+    justify-content: space-evenly;
+    color: hsla(0, 0%, 20%, 1);
+}
+
+.call-agent {
+    margin: 2rem 0rem;
+}
+
+.call-agent span {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.call-agent button {
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 0;
+    color: hsla(0, 0%, 100%, 1);
+    background-color: hsla(223, 54%, 22%, 1);
+}
+
+.tour{
+    padding: 2rem 2.5rem;
+    margin: auto;
+    background-color: hsla(223, 54%, 22%, 1);
+}
+
+.tour h4 {
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin: .5rem;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.tour > form {
+    margin: auto;
+    margin-top: 1.5rem;
+}
+
+.tour form > input [type="email"],
+            [type="text"],
+            [type="email"],
+            [type="password"],
+            [type="time"],
+            [type="date"],
+            [type="tel"],
+.tour form> textarea,
+#property-type
+{
+  width: 100%;
+  margin: .5rem;
+  font-size: .9rem;
+  font-weight: 600;
+  border: none;
+  color: hsla(0, 0%, 0%, 0.6);
+  background: hsla(0, 0%, 100%, 1);
+  padding: 1rem .8rem;
+}
+
+.tour label {
+    margin: .5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.tour-btn {
+    margin: 1rem .5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: hsla(50, 100%, 55%, 1);
+}
+
+.amenities {
+    padding: 1rem 2.5rem;
+    margin: auto;
+    background-color: hsla(0, 0%, 100%, 1);
+}
+
+.amenities h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1.3rem;
+    color: hsla(0, 0%, 0%, 1)
+}
+
+.amenities span {
+    font-size: .8rem;
+    font-weight: 800;
+    margin: auto .4rem;
+    margin-bottom: 2rem;
+    padding: .6rem .3rem;
+    color: hsla(0, 0%,40%, 1);
+    background-color: hsla(193, 53%, 97%, 1);
+}
+
+.amenities-row {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.amen-content {
+    margin-bottom: 1.5rem;
+}
 
 
 @media only screen and (min-width: 425px) {

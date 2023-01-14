@@ -31,7 +31,7 @@ window.location.href = "./login.html";
 const images = document.getElementsByClassName("featImage");
 for (let i = 0; i < images.length; i++) {
     images[i].addEventListener("click", function() {
-        window.location.href = './details.html';
+        window.location.href = './home.html';
     })
 }
 
@@ -92,3 +92,17 @@ blog.addEventListener("click", function (e) {
     });
 
 });
+
+// var propertImage = document.getElementsByClassName("propertImage")[0];
+// var modal = document.getElementsByClassName("modal")[0];
+// propertImage.addEventListener("click", function(){
+//     modal.style.display = "block";
+// });
+
+
+
+// for (let i = 0; i < images.length; i++) {
+//     images[i].addEventListener("click", function() {
+//         window.location.href = './home.html';
+//     })
+// }

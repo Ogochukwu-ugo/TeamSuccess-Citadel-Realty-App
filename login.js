@@ -46,7 +46,7 @@ login.addEventListener("submit", (e)=>{
 
                 // });
                 console.log("Login successful");
-                window.location.href = './home.html';
+                window.location.href = './details.html';
             }
             
         

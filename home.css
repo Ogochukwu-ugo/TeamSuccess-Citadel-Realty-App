@@ -128,10 +128,44 @@ body{
     background: hsla(50, 100%, 55%, 1);
 }
 
-.amenities {
+.estateBtns h6 {
+    font-size: .8rem;
+    font-weight: 800;
+    color: hsla(0, 0%,40%, 1);
+}
+
+.estateBtns span {
+    font-size: .7rem;
+    font-weight: 500;
+    color: hsla(0, 0%,40%, 1);
+}
+
+.amenities, 
+.de-page,
+.estate,
+.estate-column-right,
+.estate-column-left{
     padding: 1rem 2.5rem;
     margin: auto;
     background-color: hsla(0, 0%, 100%, 1);
+}
+
+.estate-column-left{
+    padding: 0rem 2.5rem;
+    margin: auto;
+    background-color: hsla(0, 0%, 100%, 1);
+}
+
+.estate-column-left .vidsBtn {
+    margin: auto .5rem;
+}
+.estate-column-left .vidBtn {
+    margin: auto.5rem;
+    background-color: hsla(50, 100%, 55%, 1);
+}
+
+.estate-column-right .estateBtns {
+    margin: 0rem 2rem;
 }
 
 .amenities h3 {
@@ -151,16 +185,92 @@ body{
     background-color: hsla(193, 53%, 97%, 1);
 }
 
-.amenities-row {
+.amenities-row,
+.iconBtns {
     margin: auto;
     display: flex;
     flex-direction: row;
 }
 
+.estateBtns {
+    width: 8rem;
+    height: 3.5rem;
+    margin: auto;
+    padding: .6rem .6rem;
+    text-align: center;
+    border: none;
+    font-size: .8rem;
+    font-weight: 500;
+    border-radius: .6rem;
+    background-color: hsla(171, 37%, 96%, 1);
+}
+
+.estateBtns img {
+    height: 1.3rem;
+}
+
+
+
 .amen-content {
     margin-bottom: 1.5rem;
 }
 
+.de-page h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 1.3rem;
+    color: hsla(0, 0%,40%, 1);
+}
+
+.estate-column-right h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: hsla(0, 0%,40%, 1);
+}
+
+.estate-column-right p {
+    font-size: .8rem;
+    font-weight: 800;
+    color: hsla(0, 0%,40%, 1);
+}
+
+.estate-column-right .hp {
+    font-size: 1.5rem;
+}
+
+.de-page > article {
+    margin: auto 1rem;
+    padding: .6rem .3rem;
+}
+
+.estate-column-right span {
+    font-size: .7rem;
+    margin-top: -3rem;
+    font-weight: 400;
+    color: hsla(0, 0%,40%, 1);
+}
+
+.de-page article span {
+    margin: auto;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+    font-weight: 400;
+    color: hsla(0, 0%,40%, 1);
+}
+
+.descript {
+    background-color: hsla(171, 37%, 96%, 1);
+}
+
+.descript-content {
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsla(0, 0%,40%, 1);
+} 
+
+.estate-row {
+    margin: auto;
+}
 
 @media only screen and (min-width: 425px) {
     .home-pro {

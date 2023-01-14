@@ -22,7 +22,7 @@ In building the web app, I and my teammate used several tools for building. The 
 
 ### Links
 
--  Live Site URL: [Add live site URL here](https://team-success-citadel-realty-app.vercel.app/)
+-  Live Site URL: [Add live site URL here](https://citadel-realty-app.netlify.app/)
 
 
 ### Useful Resources

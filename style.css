@@ -820,7 +820,7 @@ footer {
 
     .carousel-control-next,
     .carousel-control-previous {
-        height: 2rem;
+        /* height: 2rem; */
         color: hsla(0, 0%, 20%, 1);
     }
 

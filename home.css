@@ -152,7 +152,8 @@ body{
 
 .estate-column-left{
     padding: 0rem 2.5rem;
-    margin: auto;
+    margin-top: 1rem;
+    margin-right: -8rem;
     background-color: hsla(0, 0%, 100%, 1);
 }
 
@@ -224,13 +225,14 @@ body{
 
 .estate-column-right h4 {
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 700;
     color: hsla(0, 0%,40%, 1);
 }
 
 .estate-column-right p {
     font-size: .8rem;
     font-weight: 800;
+    margin-top: -1rem;
     color: hsla(0, 0%,40%, 1);
 }
 
@@ -243,11 +245,17 @@ body{
     padding: .6rem .3rem;
 }
 
-.estate-column-right span {
+.estate-column-right .e-span {
     font-size: .7rem;
-    margin-top: -3rem;
+    margin-top: -1rem;
     font-weight: 400;
     color: hsla(0, 0%,40%, 1);
+}
+
+.estateBtns p {
+    font-size: .8rem;
+    font-weight: 500;
+    color: hsla(0, 0%, 0%, 1);
 }
 
 .de-page article span {

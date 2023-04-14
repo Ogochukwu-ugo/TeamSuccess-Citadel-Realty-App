@@ -36,9 +36,12 @@
     font-weight: 600;
 }
 
-/* .land-blog {
-    margin-top: -12rem;
-} */
+.teams {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .teams > picture img {
     width: 8rem;
@@ -56,11 +59,6 @@
     margin: 2rem 0rem;
 }
 
-.team-column-left {
-    display: flex;
-    flex-direction: column;
-    margin: auto 0rem;
-}
 
 .teams > .teams-detail {
    margin: auto 1rem;
@@ -85,7 +83,6 @@
 }
 
 .team {
-    margin: auto;
     margin-top: 1rem;
     background-color: hsla(223, 54%, 22%, 1);
 }
@@ -162,14 +159,9 @@
     .teams > .teams-detail {
         margin: .5rem 1rem;
         text-align: center;
-     }
-
-     .teams > picture img {
-        width: 6rem;
-        height: auto;
-        object-fit: cover;
-        border-radius: 100%;
     }
+
+  
 
     .why-column-details span {
         font-size: 1.5rem;
@@ -191,18 +183,6 @@
         background: hsla(223, 54%, 22%, 1);
         margin: auto;
     }
-
-    .team-column-left {
-        display: flex;
-        flex-direction: row;
-        margin: 1.5rem .3rem;
-    }
-
-    .teams {
-        margin: 1rem 0rem;
-    }
-
-    
 
     .team-column-right {
         margin: 4rem 1rem;

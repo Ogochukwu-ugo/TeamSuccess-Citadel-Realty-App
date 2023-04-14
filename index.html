@@ -19,7 +19,7 @@
 
     <nav  class="navbar menu navbar-expand-lg" aria-label="Main navigation" >
         <div class="container-fluid ">
-          <a class="navbar-brand" href="">
+          <a class="navbar-brand" href="./index.html">
             <img class="logo" src="./Images/vector-file 2.png" alt="App logo">
           </a>
           <button class="navbar-toggler collapsed " type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-content" aria-controls="navbar-content">
@@ -38,25 +38,26 @@
 
             <div class="offcanvas-body navLinkContainer">
               <ul class="nav navbar-nav nav-links">
-                <li class="nav-item">
-                  <a  class="nav-link "  href="./index.html">Home</a>
-                </li>
-                <li  class="nav-item">
-                  <a  class="nav-link "  href="./home.html"> Properties</a>
-                </li>
-                <li  class="nav-item">
-                  <a  class="nav-link "  href="./faqs.html">FAQS</a>
-                </li>
-                <li  class="nav-item">
-                  <a class="nav-link " href="#blog">Blog</a>
-                </li>
-                <li  class="nav-item">
-                  <a class="nav-link " href="./contact.html">Contact us</a>
-                </li>
-              </ul>
-                <button  class="btn btn-md navBtn logbtn" id="log">Login</button>
-              
-              <button class="btn btn-md navBtn" id="signUp">Sign up</button>
+                    <li class="nav-item">
+                        <a  class="nav-link "  href="./index.html">Home</a>
+                    </li>
+                    <li  class="nav-item">
+                        <a  class="nav-link "  href="./home.html"> Properties</a>
+                    </li>
+                    <li  class="nav-item">
+                     <a  class="nav-link "  href="./faqs.html">FAQS</a>
+                    </li>
+                    <li  class="nav-item">
+                        <a class="nav-link " href="#blog">Blog</a>
+                    </li>
+                    <li  class="nav-item">
+                        <a class="nav-link " href="./contact.html">Contact us</a>
+                    </li>
+                </ul>
+                <div class="navBtns">
+                    <button  class="btn btn-md navBtn logbtn" id="log">Login</button>
+                    <button class="btn btn-md navBtn" id="signUp">Sign up</button>
+                </div>
             </div>
 
           </div>
@@ -65,7 +66,7 @@
 
       <!-------------------Hero Section----------------------->
 
-      <header class="hero-section land-hero container-fluid">
+      <header class="hero-section container-fluid">
         <div class="row hero-row">
             <div class="col-md-6 hero-content">
                 <h1>
@@ -78,12 +79,12 @@
 
             </div>
 
-            <div class="col-md-6 hero-image land-hero-image">
+            <div class="col-md-6 hero-image">
                 <img src="./Images/Landing-image1.png" alt="Image of a building">
             </div>
         </div>
         <div class="hero-services land-hero-service">
-            <ul class="nav nav-tabs">
+            <ul class="nav nav-tabs border-0">
                 <li class="nav-item" >
                   <a class="nav-link "  href="#buy" data-bs-toggle="tab">Buy</a>
                 </li>
@@ -104,6 +105,7 @@
                     </div>
                     <div class="house-type">
                         <select name="house" id="house">
+                            <option value="Type">Type</option>
                             <option value="Duplex">Duplex</option>
                             <option value="Bungalow">Bungalow</option>
                             <option value="Semi-Detached">Semi-Detached</option>
@@ -111,9 +113,10 @@
                     </div>
                     <div class="price">
                         <select name="price" id="price">
-                            <option value="Duplex">Price</option>
-                            <option value="Bungalow">Price</option>
-                            <option value="Semi-Detached">Price</option>
+                            <option value="Price">Price</option>
+                            <option value="Duplex">₦200,000,000 - ₦399,000,000</option>
+                            <option value="Bungalow">₦150,000,000 - ₦190,000,000</option>
+                            <option value="Semi-Detached">₦400,000,000 - ₦500,000,000</option>
                         </select>
                     </div>
                     <input type="button" value="Search now">
@@ -128,6 +131,7 @@
                     </div>
                     <div class="house-type">
                         <select name="house" id="house">
+                            <option value="Type">Type</option>
                             <option value="Duplex">Duplex</option>
                             <option value="Bungalow">Bungalow</option>
                             <option value="Semi-Detached">Semi-Detached</option>
@@ -135,6 +139,7 @@
                     </div>
                     <div class="price">
                         <select name="price" id="price">
+                            <option value="Price">Price</option>
                             <option value="Duplex">₦150,000,000 - ₦190,000,000</option>
                             <option value="Bungalow">₦200,000,000 - ₦399,000,000</option>
                             <option value="Semi-Detached">₦400,000,000 - ₦500,000,000</option>
@@ -152,6 +157,7 @@
                     </div>
                     <div class="house-type">
                         <select name="house" id="house">
+                            <option value="Type">Type</option>
                             <option value="Duplex">Duplex</option>
                             <option value="Bungalow">Bungalow</option>
                             <option value="Semi-Detached">Semi-Detached</option>
@@ -159,6 +165,7 @@
                     </div>
                     <div class="price">
                         <select name="price" id="price">
+                            <option value="Price">Price</option>
                             <option value="Duplex">₦1,500,000 - ₦1,900,000</option>
                             <option value="Bungalow">₦2,000,000 - ₦3,990,000</option>
                             <option value="Semi-Detached">₦4,000,000 - ₦5,000,000</option>
@@ -172,17 +179,17 @@
 
       <!------------------------------Our Services----------------------->
 
-      <section class="services land-service container-fluid">
-        <h3>Our Services</h3>
-        <p>Our company offers a wide range of services to help you find your dream home as quickly and easily as possible.</p>
+      <section class="services container-fluid">
+        <h3 class="mb-3">Our Services</h3>
+        <p class="mb-4">Our company offers a wide range of services to help you find your dream home as quickly and easily as possible.</p>
         <div class="row service-row">
-            <div class="col-lg-5 service-column">
+            <div class="col-lg-5 service-column mb-3 mb-lg-0">
                 <figure class="service-image">
                     <img src="./Images/Frame 178.png" alt=" An image of a Semi-Detached building">
                 </figure>
             </div>
             <div class="col-lg-7 service-column">
-                <div class="col service-column1-right">
+                <div class="col service-column1-right ">
                     <figure class="service-icon">
                         <img src="./Images/buy-home 2.png" alt="A house icon">
                     </figure>
@@ -206,7 +213,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col service-column-right">
+                <div class="col service-column3-right">
                     <figure class="service-icon">
                         <img src="./Images/house2.png" alt="A house icon">
                     </figure>
@@ -223,19 +230,19 @@
       </section>
 
       <!-----------------------Latest Section---------------------------->
-      <section class="latest land-latest container-fluid">
+      <section class="latest">
         <h3>Latest Properties</h3>
         <div class="row late-row">
-                <div class="late-propty">
-                    <figure>
-                        <img src="./Images/Frame 76.png" alt="">
-                    </figure>
-                    <div class="late-propty-details">
-                        <h5>4 Bedroom Duplex</h5>
-                        <p>123, Ozumba Mbadiwe, VI, Lagos</p>
-                        <span> ₦210,000,000</span>
-                    </div>
+            <div class="late-propty">
+                <figure>
+                    <img src="./Images/Frame 76.png" alt="">
+                </figure>
+                <div class="late-propty-details">
+                    <h5>4 Bedroom Duplex</h5>
+                    <p>123, Ozumba Mbadiwe, VI, Lagos</p>
+                    <span> ₦210,000,000</span>
                 </div>
+            </div>
             
             <div class="late-propty">
                 <figure>
@@ -328,11 +335,11 @@
 
       <!-----------------------Features Section---------------------------->
 
-      <section class="features container-fluid land-feat" id="features">
+      <section class="features container-fluid" id="features">
         <h3>Featured Properties</h3>
-        <div class="feat-images-wrapper">
-            <div class="row upper-feat-images">c
-                <div class="col-md-3 upper-image featImage">
+        <div class="feat-images-wrapper mx-auto">
+            <div class="row upper-feat-images mx-auto">
+                <div class="col-md-6 col-lg-3 upper-image featImage">
                     <figure class="rent-image" id="sale">
                         <img src="./images/Frame 75.png" alt="Image of a storey building ">
                         <figcaption>Sale - ₦210,000,000</figcaption>
@@ -343,7 +350,7 @@
                         <p class="feat-house-type">4 Bedroom Duplex</p>
                     </article>
                 </div>
-                <div class="col-md-3 upper-image featImage">
+                <div class="col-md-6 col-lg-3 upper-image featImage">
                     <figure class="rent-image">
                         <img src="./images/Frame 76.png" alt="Image of a storey building ">
                         <figcaption>Sale - ₦220,000,000</figcaption>
@@ -354,7 +361,7 @@
                         <p class="feat-house-type">4 Bedroom Duplex</p>
                     </article>
                 </div>
-                <div class="col-md-3 upper-image featImage">
+                <div class="col-md-6 col-lg-3 upper-image featImage">
                     <figure class="rent-image">
                         <img src="./images/Frame 77.png" alt="Image of a storey building ">
                         <figcaption>Rent - ₦1,800,000</figcaption>
@@ -365,7 +372,7 @@
                         <p class="feat-house-type">4 Bedroom Duplex</p>
                     </article>
                 </div>
-                <div class="col-md-3 upper-image featImage">
+                <div class="col-md-6 col-lg-3 upper-image featImage">
                     <figure class="rent-image">
                         <img src="./images/Frame 78.png" alt="Image of a storey building ">
                         <figcaption>Rent - ₦880,000</figcaption>
@@ -378,7 +385,7 @@
                 </div>
             </div>
             <div class="row lower-feat-images">
-                <div class="col-md-3 upper-image featImage">
+                <div class="col-md-6 col-lg-3 upper-image featImage">
                     <figure class="rent-image">
                         <img src="./images/Frame 84.png" alt="Image of a storey building ">
                         <figcaption>Rent - ₦2,000,000</figcaption>
@@ -389,7 +396,7 @@
                         <p class="feat-house-type">4 Bedroom Duplex</p>
                     </article>
                 </div>
-                <div class="col-md-3 upper-image featImage">
+                <div class="col-md-6 col-lg-3 upper-image featImage">
                     <figure class="rent-image">
                         <img src="./images/Frame 85.png" alt="Image of a storey building ">
                         <figcaption>Sale - ₦180,000,000</figcaption>
@@ -400,7 +407,7 @@
                         <p class="feat-house-type">4 Bedroom Duplex</p>
                     </article>
                 </div>
-                <div class="col-md-3 upper-image featImage">
+                <div class="col-md-6 col-lg-3 upper-image featImage">
                     <figure class="rent-image">
                         <img src="./images/Frame 86.png" alt="Image of a storey building ">
                         <figcaption>Rent - ₦750,000</figcaption>
@@ -411,7 +418,7 @@
                         <p class="feat-house-type">6 Bedroom Duplex</p>
                     </article>
                 </div>
-                <div class="col-md-3 upper-image featImage">
+                <div class="col-md-6 col-lg-3 upper-image featImage">
                     <figure class="rent-image">
                         <img src="./images/Frame 87.png" alt="Image of a storey building ">
                         <figcaption>Rent - ₦920,000</figcaption>
@@ -478,37 +485,39 @@
         <button class="blogBtn" type="button">Read More</button>
       </article>
 
-      <section class="team container-fluid">
-        <div class="row team-row">
+      <section class="team container-fluid mx-auto">
+        <div class="row team-row mx-auto">
             <div class="col-lg-4 team-column-right">
                 <h4>Meet Our Agents</h4>
             </div>
-            <div class="col-lg-6 team-column-left">
-                <div class="teams">
-                    <picture>
-                        <img src="./Images/image 11team.png" alt="">
-                    </picture>
-                    <div class="teams-detail">
-                        <h4>Jemima</h4>
-                        <span>Realtor</span>
+            <div class="col-lg-6 team-column-left mx-auto">
+                <div class="row mx-auto mt-0 mt-lg-4">
+                    <div class="teams col-md-4">
+                        <picture>
+                            <img src="./Images/image 11team.png" alt="">
+                        </picture>
+                        <div class="teams-detail">
+                            <h4>Jemima</h4>
+                            <span>Realtor</span>
+                        </div>
                     </div>
-                </div>
-                <div class="teams">
-                    <picture>
-                        <img src="./Images/image 10team.png" alt="">
-                    </picture>
-                    <div class="teams-detail">
-                        <h4>Ogochukwu</h4>
-                        <span>Realtor</span>
+                    <div class="teams col-md-4">
+                        <picture>
+                            <img src="./Images/image 10team.png" alt="">
+                        </picture>
+                        <div class="teams-detail">
+                            <h4>Ogochukwu</h4>
+                            <span>Realtor</span>
+                        </div>
                     </div>
-                </div>
-                <div class="teams">
-                    <picture>
-                        <img src="./Images/image 12team.png" alt="">
-                    </picture>
-                    <div class="teams-detail">
-                        <h4>Coletta</h4>
-                        <span>Realtor</span>
+                    <div class="teams col-md-4">
+                        <picture>
+                            <img src="./Images/image 12team.png" alt="">
+                        </picture>
+                        <div class="teams-detail">
+                            <h4>Coletta</h4>
+                            <span>Realtor</span>
+                        </div>
                     </div>
                 </div>
             </div>

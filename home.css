@@ -3,13 +3,18 @@ body{
 }
 
 .home-pro {
-    margin-top: -3rem;
-    padding: 1.4rem 2.5rem;
+    margin-top: 2rem;
+    padding: .8rem .3rem;
 }
 
 .home-feat {
     margin-top: 2rem;
-    padding: 1.4rem 2.5rem;
+    padding: .8rem .3rem;
+}
+
+.homesBtn{
+    margin: auto 5.7rem;
+    margin-top: 1rem;
 }
 
 .tab-pane > form .homeBtn{
@@ -280,18 +285,43 @@ body{
     margin: auto;
 }
 
+@media only screen and (min-width: 375px) {
+
+    .homesBtn {
+        margin: auto 7.5rem;
+    }
+}
 @media only screen and (min-width: 425px) {
     .home-pro {
         margin-top: 16rem;
+    }
+
+    .homesBtn {
+        margin: auto 9rem;
     }
 }
 @media only screen and (min-width: 768px) {
     .home-pro {
         margin-top: .7rem;
     }
+
+    .homesBtn {
+        margin: auto 19.7rem;
+        margin-top: 1rem;
+    }
 }
 @media only screen and (min-width: 1024px) {
     .home-pro {
         margin-top: 1rem;
+    }
+
+    .homesBtn {
+        margin: auto 28rem;
+    }
+}
+@media only screen and (min-width: 1440px) {
+
+    .homesBtn {
+        margin: auto 42rem;
     }
 }

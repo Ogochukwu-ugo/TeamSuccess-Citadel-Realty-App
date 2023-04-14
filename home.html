@@ -17,9 +17,9 @@
 <body>
     <!-------------------Navigation Section--------------------------->
 
-    <nav  class="navbar menu navbar-expand-lg " aria-label="Main navigation" >
+    <nav  class="navbar menu navbar-expand-lg" aria-label="Main navigation" >
         <div class="container-fluid ">
-          <a class="navbar-brand" href="">
+          <a class="navbar-brand" href="./index.html">
             <img class="logo" src="./Images/vector-file 2.png" alt="App logo">
           </a>
           <button class="navbar-toggler collapsed " type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-content" aria-controls="navbar-content">
@@ -31,33 +31,33 @@
           <div class="offcanvas offcanvas-end "  tabindex="-1" id="navbar-content" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel">
-                <img class="logo1" src="./Images/Whole-logo.png" alt="App logo">
+                <img class="logo1" src="./Images/vector-file 2.png" alt="App logo">
               </h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
 
             <div class="offcanvas-body navLinkContainer">
               <ul class="nav navbar-nav nav-links">
-                <li class="nav-item">
-                  <a  class="nav-link "  href="./index.html">Home</a>
-                </li>
-                <li  class="nav-item">
-                  <a  class="nav-link "  href="./home.html"> Properties</a>
-                </li>
-                <li  class="nav-item">
-                  <a  class="nav-link "  href="./faqs.html">FAQS</a>
-                </li>
-                <li  class="nav-item">
-                  <a class="nav-link " href="./index.html">Blog</a>
-                </li>
-                <li  class="nav-item">
-                  <a class="nav-link " href="./contact.html">Contact us</a>
-                </li>
-              </ul>
-            
-              <button  class="btn btn-md navBtn logbtn" id="log">Login</button>
-              
-              <button class="btn btn-md navBtn" id="signUp">Sign up</button>
+                    <li class="nav-item">
+                        <a  class="nav-link "  href="./index.html">Home</a>
+                    </li>
+                    <li  class="nav-item">
+                        <a  class="nav-link "  href="./home.html"> Properties</a>
+                    </li>
+                    <li  class="nav-item">
+                     <a  class="nav-link "  href="./faqs.html">FAQS</a>
+                    </li>
+                    <li  class="nav-item">
+                        <a class="nav-link " href="#blog">Blog</a>
+                    </li>
+                    <li  class="nav-item">
+                        <a class="nav-link " href="./contact.html">Contact us</a>
+                    </li>
+                </ul>
+                <div class="navBtns">
+                    <button  class="btn btn-md navBtn logbtn" id="log">Login</button>
+                    <button class="btn btn-md navBtn" id="signUp">Sign up</button>
+                </div>
             </div>
 
           </div>
@@ -66,7 +66,7 @@
 
       <!-------------------Hero Section----------------------->
 
-      <header class="hero-section">
+      <header class="hero-section container-fluid">
         <div class="row hero-row">
             <div class="col-md-6 hero-content">
                 <h1>
@@ -85,7 +85,7 @@
             </div>
         </div>
         <div class="hero-services">
-            <ul class="nav nav-tabs">
+            <ul class="nav nav-tabs border-0">
                 <li class="nav-item" >
                   <a class="nav-link "  href="#buy" data-bs-toggle="tab">Buy</a>
                 </li>
@@ -218,7 +218,7 @@
         <h3>Properties For Rent</h3>
         <div class="feat-images-wrapper">
             <div class="row upper-feat-images">
-                <div class="col-md-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
+                <div class="col-md-6 col-lg-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
                     <figure class="rent-image" id="sale">
                         <img src="./images/Frame 75.png" alt="Image of a storey building ">
                         <figcaption>Sale - ₦210,000,000</figcaption>
@@ -229,7 +229,7 @@
                         <p class="feat-house-type">4 Bedroom Duplex</p>
                     </article>
                 </div>
-                <div class="col-md-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
+                <div class="col-md-6 col-lg-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
                     <figure class="rent-image">
                         <img src="./images/Frame 76.png" alt="Image of a storey building ">
                         <figcaption>Sale - ₦220,000,000</figcaption>
@@ -240,7 +240,7 @@
                         <p class="feat-house-type">4 Bedroom Duplex</p>
                     </article>
                 </div>
-                <div class="col-md-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
+                <div class="col-md-6 col-lg-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
                     <figure class="rent-image">
                         <img src="./images/Frame 77.png" alt="Image of a storey building ">
                         <figcaption>Rent - ₦1,800,000</figcaption>
@@ -251,7 +251,7 @@
                         <p class="feat-house-type">4 Bedroom Duplex</p>
                     </article>
                 </div>
-                <div class="col-md-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
+                <div class="col-md-6 col-lg-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
                     <figure class="rent-image">
                         <img src="./images/Frame 78.png" alt="Image of a storey building ">
                         <figcaption>Rent - ₦880,000</figcaption>
@@ -264,7 +264,7 @@
                 </div>
             </div>
             <div class="row lower-feat-images">
-                <div class="col-md-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
+                <div class="col-md-6 col-lg-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
                     <figure class="rent-image">
                         <img src="./images/Frame 84.png" alt="Image of a storey building ">
                         <figcaption>Rent - ₦2,000,000</figcaption>
@@ -275,7 +275,7 @@
                         <p class="feat-house-type">4 Bedroom Duplex</p>
                     </article>
                 </div>
-                <div class="col-md-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
+                <div class="col-md-6 col-lg-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
                     <figure class="rent-image">
                         <img src="./images/Frame 85.png" alt="Image of a storey building ">
                         <figcaption>Sale - ₦180,000,000</figcaption>
@@ -286,7 +286,7 @@
                         <p class="feat-house-type">4 Bedroom Duplex</p>
                     </article>
                 </div>
-                <div class="col-md-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
+                <div class="col-md-6 col-lg-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
                     <figure class="rent-image">
                         <img src="./images/Frame 86.png" alt="Image of a storey building ">
                         <figcaption>Rent - ₦750,000</figcaption>
@@ -297,7 +297,7 @@
                         <p class="feat-house-type">6 Bedroom Duplex</p>
                     </article>
                 </div>
-                <div class="col-md-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
+                <div class="col-md-6 col-lg-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
                     <figure class="rent-image">
                         <img src="./images/Frame 87.png" alt="Image of a storey building ">
                         <figcaption>Rent - ₦920,000</figcaption>
@@ -310,7 +310,7 @@
                 </div>
             </div>
         </div>
-        <button class="blogBtn" type="button"  id="blogBtn">View More</button>
+        <button class="blogBtn homesBtn" type="button"  id="blogBtn">View More</button>
       </section>
 
 
@@ -323,7 +323,7 @@
         <h3>Properties For Sale</h3>
         <div class="feat-images-wrapper">
             <div class="row upper-feat-images">
-                <div class="col-md-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
+                <div class="col-md-6 col-lg-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
                     <figure class="rent-image" id="sale">
                         <img src="./images/Frame 75.png" alt="Image of a storey building ">
                         <figcaption>Sale - ₦210,000,000</figcaption>
@@ -334,7 +334,7 @@
                         <p class="feat-house-type">4 Bedroom Duplex</p>
                     </article>
                 </div>
-                <div class="col-md-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
+                <div class="col-md-6 col-lg-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
                     <figure class="rent-image">
                         <img src="./images/Frame 76.png" alt="Image of a storey building ">
                         <figcaption>Sale - ₦220,000,000</figcaption>
@@ -345,7 +345,7 @@
                         <p class="feat-house-type">4 Bedroom Duplex</p>
                     </article>
                 </div>
-                <div class="col-md-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
+                <div class="col-md-6 col-lg-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
                     <figure class="rent-image">
                         <img src="./images/Frame 77.png" alt="Image of a storey building ">
                         <figcaption>Rent - ₦1,800,000</figcaption>
@@ -356,7 +356,7 @@
                         <p class="feat-house-type">4 Bedroom Duplex</p>
                     </article>
                 </div>
-                <div class="col-md-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
+                <div class="col-md-6 col-lg-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
                     <figure class="rent-image">
                         <img src="./images/Frame 78.png" alt="Image of a storey building ">
                         <figcaption>Rent - ₦880,000</figcaption>
@@ -369,7 +369,7 @@
                 </div>
             </div>
             <div class="row lower-feat-images">
-                <div class="col-md-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
+                <div class="col-md-6 col-lg-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
                     <figure class="rent-image">
                         <img src="./images/Frame 84.png" alt="Image of a storey building ">
                         <figcaption>Rent - ₦2,000,000</figcaption>
@@ -380,7 +380,7 @@
                         <p class="feat-house-type">4 Bedroom Duplex</p>
                     </article>
                 </div>
-                <div class="col-md-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
+                <div class="col-md-6 col-lg-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
                     <figure class="rent-image">
                         <img src="./images/Frame 85.png" alt="Image of a storey building ">
                         <figcaption>Sale - ₦180,000,000</figcaption>
@@ -391,7 +391,7 @@
                         <p class="feat-house-type">4 Bedroom Duplex</p>
                     </article>
                 </div>
-                <div class="col-md-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
+                <div class="col-md-6 col-lg-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
                     <figure class="rent-image">
                         <img src="./images/Frame 86.png" alt="Image of a storey building ">
                         <figcaption>Rent - ₦750,000</figcaption>
@@ -402,7 +402,7 @@
                         <p class="feat-house-type">6 Bedroom Duplex</p>
                     </article>
                 </div>
-                <div class="col-md-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
+                <div class="col-md-6 col-lg-3 upper-image propertImage" data-bs-target="#propertImage" data-bs-toggle="modal">
                     <figure class="rent-image">
                         <img src="./images/Frame 87.png" alt="Image of a storey building ">
                         <figcaption>Rent - ₦920,000</figcaption>
@@ -415,7 +415,7 @@
                 </div>
             </div>
         </div>
-        <button class="blogBtn" type="button"  id="blogBtn">View More</button>
+        <button class="blogBtn homesBtn" type="button"  id="blogBtn">View More</button>
       </section>
 
       <div  id="propertImage" class="modal ">
